@@ -113,7 +113,7 @@ export default function Home() {
 <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 space-y-4 transition-all duration-300 hover:border-cyan-400/30 hover:shadow-[0_0_35px_rgba(34,211,238,0.08)]">
 
   <p className="text-slate-300 text-sm leading-relaxed">
-    Whether coordinating projects, supporting operations, improving workflows, or building systems, I've always been drawn to work that brings structure to moving parts and turns ideas into something practical, organized, and useful.
+    I've always been curious about how things work, why they break down, and what can be done to improve them. Throughout my career, I've found myself drawn to situations where information is scattered, processes are unclear, or teams are struggling with inefficiencies. Whether the challenge involves operations, project coordination, documentation, or digital product development, I enjoy identifying root causes and creating structure that helps people move forward.
   </p>
 
   <p className="text-slate-400 text-sm leading-relaxed">
