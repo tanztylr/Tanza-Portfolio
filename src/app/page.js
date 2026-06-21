@@ -117,7 +117,7 @@ export default function Home() {
   </p>
 
   <p className="text-slate-400 text-sm leading-relaxed">
-    What interests me most isn't organization for its own sake—it's helping people navigate complexity with greater clarity. Many of the projects I've worked on, both professionally and personally, share the same goal: making information easier to access, improving workflows, and creating systems that support better decisions.
+    What interests me most isn't organization for its own sake, it's helping people navigate complexity with greater clarity. Many of the projects I've worked on, both professionally and personally, share the same goal: making information easier to access, improving workflows, and creating systems that support better decisions.
   </p>
 
 </div>
