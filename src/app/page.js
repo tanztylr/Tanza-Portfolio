@@ -148,10 +148,10 @@ export default function Home() {
               <span className="text-xs font-mono font-semibold text-cyan-400 uppercase tracking-wider">Insight</span>
             </div>
             <h3 className="text-base font-semibold text-white leading-snug">
-              Information Should Be Accessible
+              Good Systems Create Consistency
             </h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              While working at Planet Fitness, employees frequently needed help with basic tasks, but access to information often depended on finding the right manager at the right time. That experience shaped my belief that information should be easy to find, easy to understand, and available when people need it.
+              At 1000 Degrees, many processes depended on verbal communication and owner knowledge. Hiring, training, inventory management, and operational procedures varied depending on who was working. Creating documented systems, training resources, and accountability workflows improved consistency across the team and reinforced an important lesson: good systems create consistent results.
             </p>
           </div>
 
