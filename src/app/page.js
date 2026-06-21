@@ -117,7 +117,7 @@ export default function Home() {
   </p>
 
   <p className="text-slate-400 text-sm leading-relaxed">
-    Over time, that systems-focused mindset naturally expanded into digital solutions and technology. Long before exploring web applications, much of the work was already centered on organizing information, improving processes, solving operational challenges, and keeping moving pieces aligned. As new tools and technologies emerged, I became increasingly interested in how digital products could simplify workflows, support better decision-making, and create more efficient ways of working.
+    What interests me most isn't organization for its own sake—it's helping people navigate complexity with greater clarity. Many of the projects I've worked on, both professionally and personally, share the same goal: making information easier to access, improving workflows, and creating systems that support better decisions.
   </p>
 
 </div>
