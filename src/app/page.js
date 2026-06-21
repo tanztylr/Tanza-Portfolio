@@ -186,10 +186,10 @@ export default function Home() {
 </span>
             </div>
             <h3 className="text-base font-semibold text-white leading-snug">
-              Digital Product Portfolio
+              Building a Portfolio With Purpose
             </h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              A growing collection of independently conceived projects focused on solving real-world challenges through research, organization, and digital solution design. Current work includes healthcare innovation, knowledge management systems, and workflow-focused applications.
+              Rather than creating a traditional resume website, I approached my portfolio as a product design challenge. The goal was to create an experience that showcases not only what I've done, but how I think, solve problems, and bring structure to complex ideas.
             </p>
           </div>
 
