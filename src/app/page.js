@@ -148,10 +148,10 @@ export default function Home() {
               <span className="text-xs font-mono font-semibold text-cyan-400 uppercase tracking-wider">Certificate</span>
             </div>
             <h3 className="text-base font-semibold text-white leading-snug">
-              Project Management Foundation
+              Information Should Be Accessible
             </h3>
             <p className="text-slate-400 text-sm leading-relaxed">
-              My project management foundation was built through higher education, professional experience, mentorship programs, independent learning, and formal training. It continues to evolve through hands-on work coordinating initiatives, improving workflows, solving operational challenges, and supporting successful project execution.
+              While working at Planet Fitness, employees frequently needed help with basic tasks, but access to information often depended on finding the right manager at the right time. That experience shaped my belief that information should be easy to find, easy to understand, and available when people need it.
             </p>
           </div>
 
