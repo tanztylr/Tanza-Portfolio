@@ -9,7 +9,7 @@ export default function AboutPage() {
   About Me
 </p>
 
-        className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 transition-all duration-300 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]"
+        <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 transition-all duration-300 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]">
           <p>
             I've always been curious about how things work, why they break down,
             and what can be done to improve them.
@@ -28,7 +28,7 @@ export default function AboutPage() {
         </div>
               <div className="grid md:grid-cols-2 gap-6 mt-12">
 
-  <div className="bg-slate-900/40 border border-cyan-500/20 rounded-2xl p-6">
+  <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 transition-all duration-300 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]">
     <h2 className="text-xl font-semibold mb-3 text-cyan-400">
       Workflow Optimization
     </h2>
@@ -39,7 +39,7 @@ export default function AboutPage() {
     </p>
   </div>
 
-  <div className="bg-slate-900/40 border border-cyan-500/20 rounded-2xl p-6">
+  <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 transition-all duration-300 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]">
     <h2 className="text-xl font-semibold mb-3 text-cyan-400">
       Digital Solutions Development
     </h2>
