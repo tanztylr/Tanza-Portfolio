@@ -86,8 +86,11 @@ export default function Home() {
           </p>
         </div>
     <p className="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed pt-2">
-  Building structure, improving workflows, and turning complex challenges into practical solutions through project management, operations, and digital problem solving.
+  Project Manager • Systems Thinker • Digital Solutions Builder
 </p>
+    <p className="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed pt-4">
+  I help transform scattered information, inefficient workflows, and complex ideas into organized systems people can actually use.
+</p>    
 </div>
 
       {/* 2. ABOUT SECTION */}
