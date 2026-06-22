@@ -82,7 +82,7 @@ export default function Home() {
             Tanza Taylor
           </h1>
           <p className="text-2xl md:text-3xl font-medium tracking-tight bg-gradient-to-r from-lime-500 via-stone-300 to-amber-100 bg-clip-text text-transparent font-sans">
-            Project Manager & Digital Solutions Builder
+            Built for Systems. Driven by Solutions.
           </p>
         </div>
     <p className="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed pt-2">
