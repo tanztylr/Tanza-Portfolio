@@ -2,11 +2,14 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-8">
+       <h1 className="text-5xl md:text-6xl font-bold mb-4">
           Creating Clarity Through Structure
         </h1>
+    <p className="text-cyan-400 uppercase tracking-widest text-sm mb-12">
+  About Me
+</p>
 
-        <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
+        <div className="bg-slate-900/40 border border-cyan-500/20 rounded-2xl p-8 space-y-6 text-lg text-slate-300 leading-relaxed backdrop-blur-sm">
           <p>
             I've always been curious about how things work, why they break down,
             and what can be done to improve them.
@@ -23,6 +26,56 @@ export default function AboutPage() {
             helping people navigate complexity with greater clarity.
           </p>
         </div>
+              <div className="grid md:grid-cols-2 gap-6 mt-12">
+
+  <div className="bg-slate-900/40 border border-cyan-500/20 rounded-2xl p-6">
+    <h2 className="text-xl font-semibold mb-3 text-cyan-400">
+      Workflow Optimization
+    </h2>
+    <p className="text-slate-300">
+      I enjoy examining how work moves through a process and identifying
+      opportunities to reduce friction, improve communication, and create
+      consistency.
+    </p>
+  </div>
+
+  <div className="bg-slate-900/40 border border-cyan-500/20 rounded-2xl p-6">
+    <h2 className="text-xl font-semibold mb-3 text-cyan-400">
+      Digital Solutions Development
+    </h2>
+    <p className="text-slate-300">
+      I enjoy using digital tools, AI platforms, and product-thinking
+      principles to transform ideas into practical solutions that improve
+      access to information and simplify workflows.
+    </p>
+  </div>
+
+</div>
+        <div className="mt-12">
+  <h2 className="text-2xl font-bold mb-6">
+    Core Strengths
+  </h2>
+
+  <div className="flex flex-wrap gap-3">
+    {[
+      "Workflow Design",
+      "Systems Organization",
+      "Process Improvement",
+      "Project Planning",
+      "Research & Analysis",
+      "Documentation",
+      "Stakeholder Communication",
+      "Digital Product Planning"
+    ].map((skill) => (
+      <span
+        key={skill}
+        className="px-4 py-2 rounded-full border border-cyan-500/20 bg-slate-900/40 text-slate-300"
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+</div>
       </div>
     </main>
   );
