@@ -9,7 +9,7 @@ export default function AboutPage() {
   About Me
 </p>
 
-        <div className="bg-slate-900/40 border border-cyan-500/20 rounded-2xl p-8 space-y-6 text-lg text-slate-300 leading-relaxed backdrop-blur-sm">
+        className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 transition-all duration-300 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]"
           <p>
             I've always been curious about how things work, why they break down,
             and what can be done to improve them.
