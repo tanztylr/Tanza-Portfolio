@@ -50,26 +50,7 @@ export default function Home() {
   return (
   <main className="relative flex min-h-screen flex-col items-center justify-start bg-slate-950 text-white p-6 pt-4 md:pt-6 pb-32 overflow-hidden">
 {/* Navigation */}
-<nav className="sticky top-0 z-50 w-full backdrop-blur-xl bg-slate-950/70 border-b border-cyan-500/10">
-  <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-center gap-8">
 
-    <div className="hidden md:flex items-center gap-6 text-sm text-slate-300">
-      <a href="#home" className="hover:text-cyan-400 transition-colors">Home</a>
-      <a href="#experience" className="hover:text-cyan-400 transition-colors">Experience</a>
-      <a href="#projects" className="hover:text-cyan-400 transition-colors">Projects</a>
-      <a href="#hobbies" className="hover:text-cyan-400 transition-colors">Beyond The Projects</a>
-    </div>
-
-    <a
-      href="/Tanza_Taylor_Resume.pdf"
-      download
-      className="px-4 py-2 rounded-lg border border-cyan-500/30 text-cyan-300 text-sm hover:bg-cyan-500/10 transition"
-    >
-      Resume
-    </a>
-
-  </div>
-</nav>
       {/* ATMOSPHERIC BACKGROUND GLOWS */}
       <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-cyan-500/10 blur-[120px] pointer-events-none" />
       <div className="absolute top-[30%] right-[-10%] w-[600px] h-[600px] rounded-full bg-indigo-500/10 blur-[150px] pointer-events-none" />

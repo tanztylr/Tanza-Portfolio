@@ -3,10 +3,10 @@ export default function AboutPage() {
     <main className="min-h-screen bg-slate-950 text-white p-8">
       <div className="max-w-4xl mx-auto">
        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          Creating Clarity Through Structure
+          About
         </h1>
-    <p className="text-cyan-400 uppercase tracking-widest text-sm mb-12">
-  About Me
+    <p className="text-slate-400 text-lg mb-12">
+  Creating Clarity Through Structure
 </p>
 
         <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 transition-all duration-300 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.3)]">
