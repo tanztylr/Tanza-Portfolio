@@ -67,7 +67,6 @@ export default function Home() {
           </p>
         </div>
     <p className="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed pt-2">
-  Project Manager • Systems Thinker • Digital Solutions Builder
 </p>
     <p className="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed pt-4">
   I help transform scattered information, inefficient workflows, and complex ideas into organized systems people can actually use.
@@ -86,12 +85,6 @@ export default function Home() {
 
         {/* Headline + Intro */}
         <div className="space-y-4 max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight bg-gradient-to-r from-slate-100 to-slate-300 bg-clip-text text-transparent">
-            Built for Systems.<br />
-            <span className="bg-gradient-to-r from-lime-500 via-stone-300 to-amber-100 bg-clip-text text-transparent">
-              Driven by Solutions.
-            </span>
-          </h2>
 
         {/* Professional Story */}
 <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 space-y-4 transition-all duration-300 hover:border-cyan-400/30 hover:shadow-[0_0_35px_rgba(34,211,238,0.08)]">
@@ -107,7 +100,7 @@ export default function Home() {
 </div>
           {/* Qualities */}
           <div className="pt-2 flex flex-wrap gap-2">
-            {["Workflow Design", "Systems Organization", "Process Improvement", "Project Planning", "Research & Analysis", "Digital Solutions"].map((q) => (
+            {["Designer of Clarity", "Out-of-the-Box Thinking", "Process Improvement", "Project Coordination", "Documentation Systems", "Digital Product Concepts"].map((q) => (
               <span
                 key={q}
                 className="text-xs font-mono font-medium px-3 py-1 rounded-full bg-white/[0.03] border border-white/10 text-slate-400 hover:text-lime-400 hover:border-lime-500/30 transition-all duration-200"

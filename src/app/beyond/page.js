@@ -4,7 +4,7 @@ export default function BeyondPage() {
       <div className="max-w-5xl mx-auto">
 
        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-  Beyond
+  Lessons that shaped my career
 </h1>
 
 <p className="text-cyan-400 text-lg mb-12">

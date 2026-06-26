@@ -11,120 +11,153 @@ export default function ExperiencePage() {
           Building Systems That Help Teams Work Better
         </p>
 
-        <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8 mb-12">
-          <p className="text-slate-300 leading-relaxed">
-            My experience spans project coordination, operations leadership,
-            process improvement, training, workflow design, and digital product
-            development. Across every role, the focus has remained the same:
-            bringing structure to complexity and helping people execute work
-            more effectively.
-          </p>
-        </div>
+       <h2 className="text-3xl font-bold mb-8">
+  Professional Journey
+</h2>
+        <div className="space-y-8 mb-16">
 
-        <div className="grid md:grid-cols-2 gap-6">
+  <div className="space-y-8 mb-16">
 
-          <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6">
-            <h2 className="text-xl font-semibold text-cyan-400 mb-3">
-              Restaurant Operations Leadership
-            </h2>
+  <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
+    <h2 className="text-2xl font-bold">
+  Grant Research & Fundraising Support Manager
+</h2>
 
-            <p className="text-slate-300">
-              Led hiring, onboarding, scheduling, inventory management,
-              training, and daily operations while supporting multiple
-              restaurant locations and teams.
-            </p>
-          </div>
+<p className="text-slate-400 italic mt-1">
+  Community Engagement & Partnerships
+</p>
 
-          <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6">
-            <h2 className="text-xl font-semibold text-cyan-400 mb-3">
-              Workflow & Process Improvement
-            </h2>
+    <p className="text-cyan-400 mb-4">
+  Tech Teens Inc. • Jun 2026 – Present
+</p>
 
-            <p className="text-slate-300">
-              Designed training resources, accountability systems,
-              documentation, and operational workflows that improved
-              consistency and reduced confusion across teams.
-            </p>
-          </div>
+    <p className="text-slate-300">
+  Develop relationships with businesses, libraries, schools, and
+  educational institutions to expand opportunities for youth
+  technology programs through strategic community partnerships.
+</p>
 
-          <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6">
-            <h2 className="text-xl font-semibold text-cyan-400 mb-3">
-              Project Coordination
-            </h2>
+    <p className="text-slate-300 mt-4">
+  Research grant opportunities, coordinate partnership outreach,
+  document stakeholder engagement, and contribute to initiatives
+  that strengthen organizational capacity and expand community impact.
+</p>
+  </div>
 
-            <p className="text-slate-300">
-              Supported collaborative projects through planning,
-              communication, documentation, presentation development,
-              stakeholder alignment, and execution tracking.
-            </p>
-          </div>
+  <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
+    <h2 className="text-2xl font-bold">
+      Project Coordinator
+    </h2>
 
-          <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6">
-            <h2 className="text-xl font-semibold text-cyan-400 mb-3">
-              Digital Product Development
-            </h2>
+    <p className="text-cyan-400 mb-4">
+      Cracker Barrel • Sept 2022 – Feb 2025
+    </p>
 
-            <p className="text-slate-300">
-              Planned and developed independent projects including AuraCare
-              and The Sim File while learning deployment workflows,
-              GitHub collaboration, and modern web technologies.
-            </p>
-          </div>
+    <p className="text-slate-300">
+      Diagnosed workflow gaps, improved scheduling processes, supported HR and
+      operations initiatives, and created more efficient systems that reduced
+      recurring delays.
+    </p>
+  </div>
 
-        </div>
+  <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
+    <h2 className="text-2xl font-bold">
+      Project Specialist
+    </h2>
+
+    <p className="text-cyan-400 mb-4">
+      Assurant • Apr 2021 – Apr 2022
+    </p>
+
+    <p className="text-slate-300">
+      Coordinated project documentation, executive reporting, milestone
+      tracking, and operational improvements that increased visibility and
+      reduced missed deadlines.
+    </p>
+  </div>
+
+  <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
+    <h2 className="text-2xl font-bold">
+      Operations Manager
+    </h2>
+
+    <p className="text-cyan-400 mb-4">
+      1000 Degrees Neapolitan Pizza • Mar 2019 – Mar 2021
+    </p>
+
+    <p className="text-slate-300">
+      Led hiring, onboarding, payroll, scheduling, inventory management,
+      documentation, and process improvements across multiple restaurant
+      locations.
+    </p>
+  </div>
+
+  <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
+    <h2 className="text-2xl font-bold">
+      Team Lead
+    </h2>
+
+    <p className="text-cyan-400 mb-4">
+      Planet Fitness • Aug 2017 – Aug 2019
+    </p>
+
+    <p className="text-slate-300">
+      Coordinated daily operations, assigned team responsibilities, maintained
+      compliance standards, and supported a high-quality member experience.
+    </p>
+  </div>
+
+</div>
+
+</div>
 
         <div className="mt-20">
           <h2 className="text-3xl font-bold mb-8">
-            Selected Experience Highlights
+            Project Highlights
           </h2>
 
           <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
+          
 
             <p className="text-cyan-400 uppercase tracking-widest text-sm mb-4">
-              Operations Leadership
+              1000 Degrees Neapolitan Pizza • Operations Management
             </p>
 
             <h3 className="text-2xl font-bold mb-4">
-              Creating Structure at 1000 Degrees Pizza
+              Creating Structure in a Fast-Paced Restaurant
             </h3>
 
             <p className="text-slate-300 leading-relaxed">
-              During my time supporting restaurant operations, I became
-              responsible for far more than day-to-day execution. Hiring,
-              onboarding, scheduling, inventory management, training, and
-              communication often relied on verbal knowledge and inconsistent
-              processes.
+              When I stepped into a leadership role, many day-to-day processes relied on verbal communication and individual habits rather than documented systems. Training varied between employees, operational knowledge wasn't centralized, and recurring tasks were handled differently depending on who was working.
             </p>
 
             <p className="text-slate-300 leading-relaxed mt-4">
-              To improve consistency, I developed documentation, training
-              resources, operational checklists, inventory workflows, and
-              manager support systems that helped create clearer expectations
-              and better accountability across the team.
+             Rather than relying on memory alone, I created repeatable systems that helped the team work more consistently. This included onboarding documentation, inventory tracking, cleaning checklists, scheduling improvements, manager resources, and structured communication processes that made daily operations easier to execute.
             </p>
 
             <p className="text-slate-300 leading-relaxed mt-4">
-              The experience reinforced a lesson that continues to influence
-              how I approach projects today: strong systems create clarity,
-              reduce friction, and help people perform at their best.
+              The biggest lesson I carried forward wasn't about restaurants—it was about people. When expectations are clear and systems are documented, teams spend less time figuring things out and more time doing great work. That principle continues to shape every project I take on today.
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 mt-8">
 
               <div className="rounded-xl border border-cyan-500/20 bg-slate-900/40 p-4">
-                Training Systems
+                Training Documentation
               </div>
 
               <div className="rounded-xl border border-cyan-500/20 bg-slate-900/40 p-4">
-                Inventory Management
+                Inventory Tracking
               </div>
 
               <div className="rounded-xl border border-cyan-500/20 bg-slate-900/40 p-4">
-                Operations Documentation
+                Manager Resources
               </div>
 
               <div className="rounded-xl border border-cyan-500/20 bg-slate-900/40 p-4">
                 Team Accountability Processes
+              </div>
+              <div className="rounded-xl border border-cyan-500/20 bg-slate-900/40 p-4">
+                Communication Protocols
               </div>
 
             </div>
