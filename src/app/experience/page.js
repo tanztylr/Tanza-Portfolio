@@ -48,65 +48,70 @@ export default function ExperiencePage() {
 
   <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
     <h2 className="text-2xl font-bold">
-      Project Coordinator
-    </h2>
+  Project Coordinator
+</h2>
 
-    <p className="text-cyan-400 mb-4">
-      Cracker Barrel • Sept 2022 – Feb 2025
-    </p>
+<p className="text-slate-400 italic mt-1">
+  Human Resources & Operations
+</p>
 
-    <p className="text-slate-300">
-      Diagnosed workflow gaps, improved scheduling processes, supported HR and
-      operations initiatives, and created more efficient systems that reduced
-      recurring delays.
-    </p>
+<p className="text-cyan-400 mb-4">
+  Cracker Barrel • Sept 2022 – Feb 2025
+</p>
+
+    <p className="text-slate-300 leading-relaxed">
+  Coordinated cross-functional HR and operations initiatives, identified workflow bottlenecks, and improved scheduling processes to support more efficient day-to-day execution. Contributed to process improvements that reduced recurring operational delays by 24% while creating more consistent ways of working.
+</p>
   </div>
 
-  <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
-    <h2 className="text-2xl font-bold">
-      Project Specialist
-    </h2>
+  <h2 className="text-2xl font-bold">
+  Project Specialist
+</h2>
 
-    <p className="text-cyan-400 mb-4">
-      Assurant • Apr 2021 – Apr 2022
-    </p>
+<p className="text-slate-400 italic mt-1">
+  Enterprise Project Delivery
+</p>
 
-    <p className="text-slate-300">
-      Coordinated project documentation, executive reporting, milestone
-      tracking, and operational improvements that increased visibility and
-      reduced missed deadlines.
-    </p>
+<p className="text-cyan-400 mb-4">
+  Assurant • Apr 2021 – Apr 2022
+</p>
+
+    <p className="text-slate-300 leading-relaxed">
+  Coordinated project documentation, executive reporting, and milestone tracking to improve visibility across active initiatives. Supported operational improvements that strengthened project execution and reduced missed deadlines.
+</p>
   </div>
 
   <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
     <h2 className="text-2xl font-bold">
       Operations Manager
     </h2>
-
+<p className="text-slate-400 italic mt-1">
+  Operations & Team Leadership
+</p>
+        
     <p className="text-cyan-400 mb-4">
       1000 Degrees Neapolitan Pizza • Mar 2019 – Mar 2021
     </p>
 
-    <p className="text-slate-300">
-      Led hiring, onboarding, payroll, scheduling, inventory management,
-      documentation, and process improvements across multiple restaurant
-      locations.
-    </p>
+    <p className="text-slate-300 leading-relaxed">
+  Led daily operations across multiple restaurant locations, overseeing hiring, onboarding, scheduling, payroll, inventory, and team development. Built repeatable processes and operational documentation that improved consistency, accountability, and execution.
+</p>
   </div>
 
   <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
     <h2 className="text-2xl font-bold">
       Team Lead
     </h2>
-
+<p className="text-slate-400 italic mt-1">
+  Frontline Operations & Customer Experience
+</p>
     <p className="text-cyan-400 mb-4">
       Planet Fitness • Aug 2017 – Aug 2019
     </p>
 
-    <p className="text-slate-300">
-      Coordinated daily operations, assigned team responsibilities, maintained
-      compliance standards, and supported a high-quality member experience.
-    </p>
+    <p className="text-slate-300 leading-relaxed">
+  Coordinated daily operations, delegated team responsibilities, maintained compliance standards, and helped deliver a consistent member experience while supporting day-to-day facility operations.
+</p>
   </div>
 
 </div>
