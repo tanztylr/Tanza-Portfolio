@@ -3,13 +3,17 @@ export default function ExperiencePage() {
     <main className="min-h-screen bg-slate-950 text-white p-8">
       <div className="max-w-5xl mx-auto">
 
-        <h1 className="text-5xl md:text-6xl font-bold mb-2">
-          Experience
-        </h1>
+       <h1 className="text-5xl md:text-6xl font-bold mb-2">
+  Experience
+</h1>
 
-        <p className="text-cyan-300 text-lg mb-12">
-          Building Systems That Help Teams Work Better
-        </p>
+<p className="text-cyan-300 text-lg">
+  Creating Clarity Through Systems and Strategy
+</p>
+
+<p className="max-w-3xl text-slate-300 leading-relaxed mt-6 mb-12">
+  My career has taken me through nonprofit, corporate, and operations leadership roles, but the goal has remained the same: creating structure where it’s needed most. Whether coordinating projects, improving workflows, or building community partnerships, I focus on designing systems that make work clearer, more efficient, and easier for people to navigate.
+</p>
 
        <h2 className="text-3xl font-bold mb-8">
   Professional Journey
