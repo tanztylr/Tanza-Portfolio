@@ -35,10 +35,8 @@ export default function ExperiencePage() {
   Tech Teens Inc. • Jun 2026 – Present
 </p>
 
-    <p className="text-slate-300">
-  Develop relationships with businesses, libraries, schools, and
-  educational institutions to expand opportunities for youth
-  technology programs through strategic community partnerships.
+    <p className="text-slate-300 leading-relaxed">
+  Support the growth of a youth technology nonprofit by researching grant opportunities, developing partnerships with businesses, schools, libraries, and community organizations, and coordinating stakeholder outreach. Contribute to fundraising and community engagement initiatives that strengthen organizational capacity and expand access to technology education for underserved students.
 </p>
 
     <p className="text-slate-300 mt-4">
