@@ -31,13 +31,22 @@ export default function ExperiencePage() {
   Community Engagement & Partnerships
 </p>
 
-    <p className="text-cyan-400 mb-4">
-  Tech Teens Inc. • Jun 2026 – Present
-</p>
-
     <p className="text-slate-300 leading-relaxed">
   Support the growth of a youth technology nonprofit by researching grant opportunities, developing partnerships with businesses, schools, libraries, and community organizations, and coordinating stakeholder outreach. Contribute to fundraising and community engagement initiatives that strengthen organizational capacity and expand access to technology education for underserved students.
 </p>
+
+<div className="mt-6">
+  <button className="rounded-lg border border-cyan-500/40 px-4 py-2 text-sm font-medium text-cyan-300 transition hover:bg-cyan-500/10 hover:border-cyan-400">
+    View Case Study →
+  </button>
+</div>
+</p>
+
+<div className="mt-6">
+  <button className="rounded-lg border border-cyan-500/40 px-4 py-2 text-sm font-medium text-cyan-300 transition hover:bg-cyan-500/10 hover:border-cyan-400">
+    View Case Study →
+  </button>
+</div>
 
     <p className="text-slate-300 mt-4">
   Research grant opportunities, coordinate partnership outreach,
@@ -59,10 +68,15 @@ export default function ExperiencePage() {
   Cracker Barrel • Sept 2022 – Feb 2025
 </p>
 
-    <p className="text-slate-300 leading-relaxed">
+<p className="text-slate-300 leading-relaxed">
   Coordinated cross-functional HR and operations initiatives, identified workflow bottlenecks, and improved scheduling processes to support more efficient day-to-day execution. Contributed to process improvements that reduced recurring operational delays by 24% while creating more consistent ways of working.
 </p>
-  </div>
+
+<div className="mt-6">
+  <button className="rounded-lg border border-cyan-500/40 px-4 py-2 text-sm font-medium text-cyan-300 transition hover:bg-cyan-500/10 hover:border-cyan-400">
+    View Case Study →
+  </button>
+</div>
 
   <h2 className="text-2xl font-bold">
   Project Specialist
@@ -83,21 +97,27 @@ export default function ExperiencePage() {
 
   <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
     <h2 className="text-2xl font-bold">
-      Operations Manager
-    </h2>
+  Operations Manager
+</h2>
+
 <p className="text-slate-400 italic mt-1">
   Operations & Team Leadership
 </p>
-        
-    <p className="text-cyan-400 mb-4">
-      1000 Degrees Neapolitan Pizza • Mar 2019 – Mar 2021
-    </p>
 
-    <p className="text-slate-300 leading-relaxed">
+<p className="text-cyan-400 mb-4">
+  1000 Degrees Neapolitan Pizza • Mar 2019 – Mar 2021
+</p>
+
+<p className="text-slate-300 leading-relaxed">
   Led daily operations across multiple restaurant locations, overseeing hiring, onboarding, scheduling, payroll, inventory, and team development. Built repeatable processes and operational documentation that improved consistency, accountability, and execution.
 </p>
-  </div>
 
+<div className="mt-6">
+  <button className="rounded-lg border border-cyan-500/40 px-4 py-2 text-sm font-medium text-cyan-300 transition hover:bg-cyan-500/10 hover:border-cyan-400">
+    View Case Study →
+  </button>
+</div>
+    
   <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
     <h2 className="text-2xl font-bold">
       Team Lead
@@ -119,11 +139,6 @@ export default function ExperiencePage() {
 </div>
 
         <div className="mt-20">
-          <h2 className="text-3xl font-bold mb-8">
-            Project Highlights
-          </h2>
-
-          <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-8">
           
 
             <p className="text-cyan-400 uppercase tracking-widest text-sm mb-4">
