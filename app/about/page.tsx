@@ -1,14 +1,15 @@
+import React from "react";
 import Navigation from "../components/Navigation";
 
-export default function AboutPage() {
+export default function AboutPage(): React.JSX.Element {
   return (
-    <main className="min-h-screen bg-[color:var(--background)] text-white">
+    <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
 
       <Navigation />
 
       <div className="mx-auto max-w-7xl px-8 py-24">
 
-        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-white/50">
+        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
           About
         </p>
 
@@ -17,7 +18,7 @@ export default function AboutPage() {
           there wasn't any before.
         </h1>
 
-        <p className="mt-10 max-w-3xl text-xl leading-relaxed text-white/70">
+        <p className="mt-10 max-w-3xl text-xl leading-relaxed text-[color:var(--muted)]">
           My career has never followed one straight path—and that's become one
           of my biggest strengths. I've worked in operations, customer
           experience, nonprofit leadership, and project coordination. Across
@@ -29,7 +30,7 @@ export default function AboutPage() {
 
           <div>
 
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
               My Approach
             </p>
 
@@ -37,7 +38,7 @@ export default function AboutPage() {
 
           <div>
 
-            <p className="leading-8 text-white/70">
+            <p className="leading-8 text-[color:var(--muted)]">
               I enjoy stepping into projects that feel overwhelming and turning
               them into something people can actually understand, use, and
               improve. Whether that means organizing a workflow, planning an
@@ -46,7 +47,7 @@ export default function AboutPage() {
               working with.
             </p>
 
-            <p className="mt-8 leading-8 text-white/70">
+            <p className="mt-8 leading-8 text-[color:var(--muted)]">
               That mindset shows up everywhere—from building AuraCare to support
               people living with epilepsy, to helping nonprofits expand their
               impact, to creating personal tools simply because I believe a
@@ -59,39 +60,39 @@ export default function AboutPage() {
 
         <section className="mt-32 grid gap-12 md:grid-cols-3">
 
-          <article className="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
 
             <h2 className="text-2xl font-semibold">
               Simplify
             </h2>
 
-            <p className="mt-4 leading-8 text-white/70">
+            <p className="mt-4 leading-8 text-[color:var(--muted)]">
               I believe the best solutions remove friction instead of adding
               more features.
             </p>
 
           </article>
 
-          <article className="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
 
             <h2 className="text-2xl font-semibold">
               Organize
             </h2>
 
-            <p className="mt-4 leading-8 text-white/70">
+            <p className="mt-4 leading-8 text-[color:var(--muted)]">
               Whether it's projects, teams, or ideas, I enjoy creating systems
               that help work move forward with confidence.
             </p>
 
           </article>
 
-          <article className="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
 
             <h2 className="text-2xl font-semibold">
               Improve
             </h2>
 
-            <p className="mt-4 leading-8 text-white/70">
+            <p className="mt-4 leading-8 text-[color:var(--muted)]">
               I rarely accept "this is how we've always done it." I'm always
               looking for thoughtful ways to make work better.
             </p>
