@@ -1,14 +1,17 @@
+"use client";
+
+// No direct React import needed for Next.js / React 17+ with the new JSX transform
 import Navigation from "../components/Navigation";
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen bg-[color:var(--background)] text-white">
+    <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
 
       <Navigation />
 
       <div className="mx-auto max-w-7xl px-8 py-24">
 
-        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-white/50">
+        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
           Projects
         </p>
 
@@ -16,7 +19,7 @@ export default function ProjectsPage() {
           Selected work.
         </h1>
 
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
+        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[color:var(--muted)]">
           A collection of projects that explore product thinking,
           systems design, and creating clarity through intentional
           execution.
@@ -26,9 +29,9 @@ export default function ProjectsPage() {
 
           {/* AuraCare */}
 
-          <article className="rounded-3xl border border-white/10 bg-white/5 p-10 transition hover:border-white/20">
+          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-10 transition hover:border-[color:var(--foreground)]">
 
-            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+            <p className="text-sm uppercase tracking-[0.2em] text-[color:var(--muted)]">
               Healthcare Product
             </p>
 
@@ -36,7 +39,7 @@ export default function ProjectsPage() {
               AuraCare
             </h2>
 
-            <p className="mt-6 max-w-2xl leading-8 text-white/70">
+            <p className="mt-6 max-w-2xl leading-8 text-[color:var(--muted)]">
               A product concept designed to make critical seizure
               information accessible in seconds through a simple,
               distraction-free experience.
@@ -44,7 +47,7 @@ export default function ProjectsPage() {
 
             <a
               href="/projects/auracare"
-              className="mt-8 inline-flex rounded-full border border-white/20 px-6 py-3"
+              className="mt-8 inline-flex rounded-full border border-[color:var(--border)] px-6 py-3 transition-all hover:border-[color:var(--foreground)] hover:bg-[color:var(--foreground)] hover:text-[color:var(--background)]"
             >
               Open Case Study →
             </a>
@@ -53,9 +56,9 @@ export default function ProjectsPage() {
 
           {/* The Sim File */}
 
-          <article className="rounded-3xl border border-white/10 bg-white/5 p-10 transition hover:border-white/20">
+          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-10 transition hover:border-[color:var(--foreground)]">
 
-            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+            <p className="text-sm uppercase tracking-[0.2em] text-[color:var(--muted)]">
               Product & Automation
             </p>
 
@@ -63,14 +66,14 @@ export default function ProjectsPage() {
               The Sim File
             </h2>
 
-            <p className="mt-6 max-w-2xl leading-8 text-white/70">
+            <p className="mt-6 max-w-2xl leading-8 text-[color:var(--muted)]">
               A structured workflow for generating immersive Sims 4
               households through prompts, organization, and automation.
             </p>
 
             <a
               href="/projects/the-sim-file"
-              className="mt-8 inline-flex rounded-full border border-white/20 px-6 py-3"
+              className="mt-8 inline-flex rounded-full border border-[color:var(--border)] px-6 py-3 transition-all hover:border-[color:var(--foreground)] hover:bg-[color:var(--foreground)] hover:text-[color:var(--background)]"
             >
               Open Case Study →
             </a>
@@ -79,9 +82,9 @@ export default function ProjectsPage() {
 
           {/* Portfolio V2 */}
 
-          <article className="rounded-3xl border border-white/10 bg-white/5 p-10 transition hover:border-white/20">
+          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-10 transition hover:border-[color:var(--foreground)]">
 
-            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+            <p className="text-sm uppercase tracking-[0.2em] text-[color:var(--muted)]">
               Portfolio Design
             </p>
 
@@ -89,14 +92,14 @@ export default function ProjectsPage() {
               Portfolio V2
             </h2>
 
-            <p className="mt-6 max-w-2xl leading-8 text-white/70">
+            <p className="mt-6 max-w-2xl leading-8 text-[color:var(--muted)]">
               Rebuilding my portfolio with a focus on storytelling,
               thoughtful UX, and scalable front-end architecture.
             </p>
 
             <a
               href="/projects/portfolio-v2"
-              className="mt-8 inline-flex rounded-full border border-white/20 px-6 py-3"
+              className="mt-8 inline-flex rounded-full border border-[color:var(--border)] px-6 py-3 transition-all hover:border-[color:var(--foreground)] hover:bg-[color:var(--foreground)] hover:text-[color:var(--background)]"
             >
               Open Case Study →
             </a>
