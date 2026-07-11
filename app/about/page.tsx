@@ -7,101 +7,59 @@ export default function AboutPage(): React.JSX.Element {
 
       <Navigation />
 
-      <div className="mx-auto max-w-7xl px-8 py-24">
+      <section className="mx-auto max-w-6xl px-8 py-24">
 
-        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-          About
-        </p>
-
-        <h1 className="max-w-5xl text-5xl font-semibold leading-tight md:text-7xl">
-          I build structure where
-          there wasn't any before.
+        <h1 className="max-w-5xl text-6xl font-semibold leading-[1.05] md:text-7xl">
+          I build structure where there wasn't any before.
         </h1>
 
-        <p className="mt-10 max-w-3xl text-xl leading-relaxed text-[color:var(--muted)]">
+        <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
           My career has never followed one straight path—and that's become one
-          of my biggest strengths. I've worked in operations, customer
-          experience, nonprofit leadership, and project coordination. Across
-          every role, I found myself doing the same thing: bringing clarity to
-          complicated work.
+          of my biggest strengths. Across every role, I've naturally gravitated
+          toward simplifying complexity and helping people work better.
         </p>
 
-        <section className="mt-32 grid gap-20 lg:grid-cols-[1fr_2fr]">
+      </section>
 
-          <div>
+      <section className="mx-auto grid max-w-7xl gap-24 px-8 py-10 lg:grid-cols-[1fr_2fr]">
 
-            <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-              My Approach
-            </p>
+        <div>
 
-          </div>
+          <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+            Philosophy
+          </p>
 
-          <div>
+        </div>
 
-            <p className="leading-8 text-[color:var(--muted)]">
-              I enjoy stepping into projects that feel overwhelming and turning
-              them into something people can actually understand, use, and
-              improve. Whether that means organizing a workflow, planning an
-              initiative, or designing a product, I naturally look for patterns,
-              remove unnecessary complexity, and create systems people enjoy
-              working with.
-            </p>
+        <div>
 
-            <p className="mt-8 leading-8 text-[color:var(--muted)]">
-              That mindset shows up everywhere—from building AuraCare to support
-              people living with epilepsy, to helping nonprofits expand their
-              impact, to creating personal tools simply because I believe a
-              better solution should exist.
-            </p>
+          <p className="leading-8 text-[color:var(--muted)]">
+            I enjoy stepping into projects that feel overwhelming and turning
+            them into something people can actually understand, use, and improve.
+            Whether that means organizing workflows, planning initiatives, or
+            designing products, I look for clarity first.
+          </p>
 
-          </div>
+          <p className="mt-8 leading-8 text-[color:var(--muted)]">
+            That mindset shows up everywhere—from AuraCare to nonprofit work to
+            personal projects built simply because a better solution should exist.
+          </p>
 
-        </section>
+        </div>
 
-        <section className="mt-32 grid gap-12 md:grid-cols-3">
+      </section>
 
-          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
+      <section className="mx-auto max-w-5xl border-t border-[color:var(--border)] px-8 py-24">
 
-            <h2 className="text-2xl font-semibold">
-              Simplify
-            </h2>
+        <blockquote className="max-w-4xl text-4xl font-semibold leading-relaxed">
+          "Good systems make good work feel effortless."
+        </blockquote>
 
-            <p className="mt-4 leading-8 text-[color:var(--muted)]">
-              I believe the best solutions remove friction instead of adding
-              more features.
-            </p>
+        <p className="mt-8 max-w-2xl leading-8 text-[color:var(--muted)]">
+          That's the principle behind almost everything I build.
+        </p>
 
-          </article>
-
-          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
-
-            <h2 className="text-2xl font-semibold">
-              Organize
-            </h2>
-
-            <p className="mt-4 leading-8 text-[color:var(--muted)]">
-              Whether it's projects, teams, or ideas, I enjoy creating systems
-              that help work move forward with confidence.
-            </p>
-
-          </article>
-
-          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8">
-
-            <h2 className="text-2xl font-semibold">
-              Improve
-            </h2>
-
-            <p className="mt-4 leading-8 text-[color:var(--muted)]">
-              I rarely accept "this is how we've always done it." I'm always
-              looking for thoughtful ways to make work better.
-            </p>
-
-          </article>
-
-        </section>
-
-      </div>
+      </section>
 
     </main>
   );

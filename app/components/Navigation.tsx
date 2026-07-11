@@ -26,7 +26,7 @@ export default function Navigation() {
               href="/projects"
               className="transition-colors hover:text-[color:var(--foreground)]"
             >
-              Work
+              Projects
             </a>
 
             <a

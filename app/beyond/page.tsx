@@ -6,72 +6,75 @@ export default function BeyondPage() {
 
       <Navigation />
 
-      <div className="mx-auto max-w-7xl px-8 py-24">
+      <section className="mx-auto max-w-6xl px-8 py-24">
 
-        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-          Beyond Work
-        </p>
-
-        <h1 className="max-w-5xl text-5xl font-semibold leading-tight md:text-7xl">
+        <p className="text-6xl font-semibold leading-tight md:text-7xl">
           Curiosity doesn't clock out at 5 PM.
-        </h1>
-
-        <p className="mt-10 max-w-3xl text-xl leading-relaxed text-[color:var(--muted)]">
-          Some people separate work from hobbies. I don't. Most of my favorite
-          projects start with a question, become an experiment, and eventually
-          turn into something useful. Whether I'm writing, designing, or
-          building systems, I'm usually trying to solve a problem that caught
-          my attention.
         </p>
 
-        <section className="mt-24 space-y-12">
+        <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
+          My best ideas rarely begin with work. They usually begin with
+          curiosity.
+        </p>
 
-          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-10 transition hover:border-[color:var(--foreground)]">
+      </section>
 
-            <h2 className="text-3xl font-semibold">
-              Writing
-            </h2>
+      <section className="mx-auto grid max-w-7xl gap-20 px-8 pb-28 lg:grid-cols-2">
 
-            <p className="mt-6 max-w-3xl leading-8 text-[color:var(--muted)]">
-              Through my Substack, <strong>Fine, I'll Say It</strong>, I write
-              about career growth, technology, systems thinking, and the
-              conversations people often have privately but rarely say out loud.
-            </p>
+        <div>
 
-          </article>
+          <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+            Writing
+          </p>
 
-          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-10 transition hover:border-[color:var(--foreground)]">
+          <h2 className="mt-5 text-4xl font-semibold">
+            Fine, I'll Say It
+          </h2>
 
-            <h2 className="text-3xl font-semibold">
-              Building Products
-            </h2>
+          <p className="mt-6 leading-8 text-[color:var(--muted)]">
+            Thoughts on project management, technology, career growth, and the
+            conversations people usually keep to themselves.
+          </p>
 
-            <p className="mt-6 max-w-3xl leading-8 text-[color:var(--muted)]">
-              I enjoy turning ideas into working products. AuraCare, The Sim
-              File, and this portfolio all started as personal observations
-              about problems that deserved better solutions.
-            </p>
+        </div>
 
-          </article>
+        <div>
 
-          <article className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-10 transition hover:border-[color:var(--foreground)]">
+          <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+            Building
+          </p>
 
-            <h2 className="text-3xl font-semibold">
-              Always Learning
-            </h2>
+          <h2 className="mt-5 text-4xl font-semibold">
+            Personal Projects
+          </h2>
 
-            <p className="mt-6 max-w-3xl leading-8 text-[color:var(--muted)]">
-              I'm constantly exploring new tools, earning certifications,
-              experimenting with Canva, improving my development skills,
-              and finding better ways to connect operations, project
-              management, and product thinking.
-            </p>
+          <p className="mt-6 leading-8 text-[color:var(--muted)]">
+            From AuraCare to The Sim File, I enjoy building things simply
+            because I believe a better solution should exist.
+          </p>
 
-          </article>
+        </div>
 
-        </section>
+      </section>
 
-      </div>
+      <section className="mx-auto max-w-5xl border-t border-[color:var(--border)] px-8 py-24">
+
+        <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+          Right Now
+        </p>
+
+        <h2 className="mt-5 text-4xl font-semibold">
+          Currently exploring...
+        </h2>
+
+        <ul className="mt-10 space-y-5 text-lg text-[color:var(--muted)]">
+          <li>• Product thinking</li>
+          <li>• Front-end development</li>
+          <li>• Grant strategy & nonprofit growth</li>
+          <li>• Building better systems</li>
+        </ul>
+
+      </section>
 
     </main>
   );

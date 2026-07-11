@@ -13,7 +13,7 @@ export default function ExperiencePage() {
         </p>
 
         <h1 className="max-w-5xl text-5xl font-semibold leading-tight md:text-7xl">
-          Building better systems wherever I work.
+          Experience shaped by solving messy problems.
         </h1>
 
         <p className="mt-10 max-w-3xl text-xl leading-relaxed text-[color:var(--muted)]">
@@ -22,7 +22,7 @@ export default function ExperiencePage() {
           and helping people work more effectively.
         </p>
 
-        <section className="mt-24 space-y-20">
+        <section className="mt-28 space-y-20">
 
           {/* Tech Teens */}
 
@@ -32,7 +32,7 @@ export default function ExperiencePage() {
               June 2026 — Present
             </p>
 
-            <h2 className="mt-2 text-3xl font-semibold">
+            <h2 className="mt-2 text-4xl font-semibold">
               Tech Teens
             </h2>
 
@@ -74,7 +74,7 @@ export default function ExperiencePage() {
               September 2022 — February 2025
             </p>
 
-            <h2 className="mt-2 text-3xl font-semibold">
+            <h2 className="mt-2 text-4xl font-semibold">
               Cracker Barrel
             </h2>
 
@@ -116,7 +116,7 @@ export default function ExperiencePage() {
               April 2021 — April 2022
             </p>
 
-            <h2 className="mt-2 text-3xl font-semibold">
+            <h2 className="mt-2 text-4xl font-semibold">
               Assurant
             </h2>
 
@@ -148,7 +148,7 @@ export default function ExperiencePage() {
               Earlier Experience
             </p>
 
-            <h2 className="mt-2 text-3xl font-semibold">
+            <h2 className="mt-2 text-4xl font-semibold">
               Operations Leadership
             </h2>
 
