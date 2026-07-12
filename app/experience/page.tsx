@@ -1,78 +1,129 @@
+"use client";
+
+import { useState } from "react";
 import Navigation from "../components/Navigation";
+import FadeIn from "../components/FadeIn";
+
+const jobs = [
+  {
+    id: "techteens",
+    company: "Tech Teens",
+    title: "Project Enablement Manager",
+    dates: "June 2026 – Present",
+    overview:
+  "As Project Enablement Manager, I helped strengthen Tech Teens' ability to deliver free technology education by researching grant opportunities, building community partnerships, and creating organized systems that supported the organization's long-term growth.",
+    contributions: [
+  "Researched grant opportunities that aligned with Tech Teens' mission and long-term goals.",
+  "Built and maintained a grant tracking system to organize deadlines, eligibility requirements, and application status.",
+  "Developed relationships with businesses, libraries, schools, and community organizations to expand partnership opportunities.",
+  "Prepared meeting documentation, funding recommendations, and strategic updates to support leadership decisions.",
+  "Created repeatable processes that made grant research and partnership outreach easier to manage over time.",
+],
+    impact:
+  "My work helped create a stronger foundation for future fundraising and community engagement. By organizing grant research, documenting opportunities, and building partnership pipelines, I made it easier for leadership to make informed decisions and focus on expanding opportunities for the teens Tech Teens serves.",
+    skills: [
+      "Project Coordination",
+      "Grant Strategy",
+      "Stakeholder Management",
+      "Community Partnerships",
+      "Documentation",
+    ],
+  },
+  {
+    id: "crackerbarrel",
+    company: "Cracker Barrel",
+    title: "Project Coordinator",
+    dates: "Sept 2022 – Feb 2025",
+    overview:
+  "As a Project Coordinator, I supported operational initiatives by improving organization, coordinating work across teams, and helping projects move forward with fewer delays. My focus was on creating structure that made day-to-day work more efficient.",
+  contributions: [
+  "Coordinated projects across multiple departments to keep work organized and on schedule.",
+  "Identified recurring operational bottlenecks and recommended process improvements.",
+  "Maintained project documentation and communicated updates with stakeholders.",
+  "Supported scheduling and planning efforts to improve day-to-day operations.",
+  "Helped create more consistent processes that reduced delays and improved team efficiency.",
+],
+    impact:
+  "By improving communication, documentation, and day-to-day coordination, I helped reduce recurring delays and created more consistent ways for teams to work together. Small operational improvements added up to smoother project execution.",
+    skills: [
+      "Operations",
+      "Scheduling",
+      "Process Improvement",
+      "Cross-functional Collaboration",
+    ],
+  },
+  {
+    id: "assurant",
+    company: "Assurant",
+    title: "Project Specialist",
+    dates: "Apr 2021 – Apr 2022",
+    overview:
+  "As a Project Specialist, I supported project execution by keeping documentation organized, tracking progress, and helping cross-functional teams stay aligned. I focused on creating clarity so projects could move forward efficiently.",
+  contributions: [
+  "Maintained project documentation and tracked milestones across multiple initiatives.",
+  "Supported communication between teams to keep projects aligned.",
+  "Monitored project progress and reported updates to stakeholders.",
+  "Organized information so teams had access to accurate project documentation.",
+  "Helped improve consistency across project coordination efforts.",
+],
+    impact:
+  "Reliable documentation and consistent communication helped projects stay organized and reduced confusion between teams. My work contributed to smoother execution by making information easier to access and act on.",
+    skills: [
+      "Project Tracking",
+      "Reporting",
+      "Documentation",
+      "Communication",
+    ],
+  },
+  {
+    id: "1000degrees",
+    company: "1000 Degrees",
+    title: "Operations Manager",
+    dates: "Mar 2019 – Mar 2021",
+    overview:
+  "As an Operations Manager, I led daily operations while supporting staff, improving processes, and creating an environment where both employees and students could succeed. The role strengthened my ability to organize people, priorities, and resources.",
+  contributions: [
+  "Managed daily operations and coordinated staff responsibilities.",
+  "Improved scheduling and operational consistency across the organization.",
+  "Coached and supported team members through day-to-day challenges.",
+  "Maintained organized processes that supported program delivery.",
+  "Balanced multiple priorities while keeping operations running smoothly.",
+],
+    impact:
+  "Strong operations created a more reliable experience for both staff and students. By bringing structure and consistency to daily work, I helped the organization operate more effectively while supporting the people behind the mission.",
+    skills: [
+      "Operations",
+      "Leadership",
+      "Scheduling",
+      "Training",
+    ],
+  },
+  {
+    id: "planetfitness",
+    company: "Planet Fitness",
+    title: "Team Lead",
+    dates: "Aug 2017 – Aug 2019",
+    overview:
+      "Supported daily operations, coached team members, and helped create a positive member experience in a fast-paced environment.",
+    contributions: [
+      "Supported daily facility operations.",
+      "Assisted with team training.",
+      "Resolved member concerns.",
+      "Maintained operational standards.",
+      "Balanced leadership with customer service."
+    ],
+    impact:
+      "The role built the leadership, communication, and operational foundation that continues to shape how I manage projects today.",
+    skills: [
+      "Leadership",
+      "Customer Experience",
+      "Operations",
+    ],
+  },
+];
 
 export default function ExperiencePage() {
-  const roles = [
-    {
-      industry: "Nonprofit",
-      company: "Tech Teens",
-      title: "Project Enablement Manager",
-      dates: "June 2026 — Present",
-      summary:
-        "Helping a growing nonprofit expand access to free technology education by improving grant strategy, partnership outreach, documentation, and project organization.",
-      highlights: [
-        "Built grant research workflows aligned with workforce development and youth technology initiatives.",
-        "Coordinated outreach with businesses, schools, libraries, and community partners.",
-        "Created documentation and tracking systems that improved organizational capacity.",
-        "Supported initiatives that expand access to technology education for teens.",
-      ],
-    },
-    {
-      industry: "Operations",
-      company: "Cracker Barrel",
-      title: "Project Coordinator",
-      dates: "September 2022 — February 2025",
-      summary:
-        "Coordinated operational initiatives across multiple teams while improving communication, reducing delays, and creating more consistent project execution.",
-      highlights: [
-        "Reduced recurring workflow delays by 24% through process improvements.",
-        "Coordinated projects across cross-functional teams with shifting priorities.",
-        "Improved stakeholder communication and operational consistency.",
-        "Built repeatable workflows that supported day-to-day execution.",
-      ],
-    },
-    {
-      industry: "Insurance",
-      company: "Assurant",
-      title: "Project Specialist",
-      dates: "April 2021 — April 2022",
-      summary:
-        "Supported project delivery by keeping documentation organized, maintaining visibility into project progress, and helping teams stay aligned.",
-      highlights: [
-        "Maintained project documentation and reporting.",
-        "Tracked project progress and deliverables.",
-        "Supported cross-functional coordination.",
-        "Improved visibility into ongoing work.",
-      ],
-    },
-    {
-      industry: "Operations",
-      company: "1000 Degrees",
-      title: "Operations Manager",
-      dates: "March 2019 — March 2021",
-      summary:
-        "Led daily operations while improving scheduling, supporting staff, and creating structure that helped teams operate more effectively.",
-      highlights: [
-        "Improved operational consistency.",
-        "Led staff coordination and scheduling.",
-        "Strengthened day-to-day team communication.",
-        "Focused on continuous process improvement.",
-      ],
-    },
-    {
-      industry: "Fitness",
-      company: "Planet Fitness",
-      title: "Team Lead",
-      dates: "August 2017 — August 2019",
-      summary:
-        "Developed leadership, customer service, and operational skills while supporting daily facility operations and mentoring team members.",
-      highlights: [
-        "Supported daily operations.",
-        "Led and coached team members.",
-        "Maintained high customer experience standards.",
-        "Solved operational issues in a fast-paced environment.",
-      ],
-    },
-  ];
+  const [selectedJob, setSelectedJob] = useState(jobs[0]);
 
   return (
     <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
@@ -84,119 +135,150 @@ export default function ExperiencePage() {
 
           <div className="mx-auto max-w-7xl px-20 py-24 xl:px-32">
 
-            {/* Hero */}
+            <FadeIn>
 
-            <section>
+              <section>
 
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-                Experience
-              </p>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                  Experience
+                </p>
 
-              <h1 className="mt-6 max-w-6xl text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
-                Different industries.
-                <br />
-                The same mindset.
-              </h1>
+                <h1 className="mt-6 text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
+                  Where I've Worked.
+                </h1>
 
-              <p className="mt-10 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
-                Every role has looked different, but the work has followed the
-                same pattern. I enjoy bringing structure to complexity,
-                improving workflows, and helping people do their best work.
-              </p>
+                <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
+                  Every role taught me something different, but they've all had
+                  one thing in common: making work simpler, clearer, and easier
+                  for the people around me.
+                </p>
 
-            </section>
+              </section>
 
-            {/* What You'll Notice */}
+            </FadeIn>
 
-            <section className="mt-24 rounded-[36px] border border-[color:var(--border)] bg-[color:var(--surface)] p-12">
+            <section className="mt-24 grid gap-12 lg:grid-cols-[340px_1fr]">
 
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-                What You'll Notice
-              </p>
+              {/* Left */}
 
-              <div className="mt-10 grid gap-6 md:grid-cols-2">
+              <div className="space-y-4">
 
-                {[
-                  "Create structure where there wasn't any.",
-                  "Improve workflows that slow teams down.",
-                  "Build documentation people actually use.",
-                  "Help projects move forward with clarity.",
-                ].map((item) => (
+                {jobs.map((job) => {
 
-                  <div
-                    key={item}
-                    className="flex items-start gap-4 rounded-2xl border border-[color:var(--border)] p-6"
-                  >
-                    <span className="text-[color:var(--accent)] text-xl">
-                      ✓
-                    </span>
+                  const active = selectedJob.id === job.id;
 
-                    <p className="text-lg leading-8">
-                      {item}
-                    </p>
+                  return (
 
-                  </div>
+                    <button
+                      key={job.id}
+                      onClick={() => setSelectedJob(job)}
+                      className={`w-full rounded-3xl border p-6 text-left transition duration-300 ${
+                        active
+                          ? "border-[color:var(--accent)] bg-[color:var(--accent)]/10"
+                          : "border-[color:var(--border)] hover:border-[color:var(--accent)]"
+                      }`}
+                    >
 
-                ))}
+                      <h3 className="text-xl font-semibold">
+                        {job.company}
+                      </h3>
+
+                      <p className="mt-2 text-[color:var(--muted)]">
+                        {job.title}
+                      </p>
+
+                      <p className="mt-1 text-sm uppercase tracking-[0.15em] text-[color:var(--muted)]">
+                        {job.dates}
+                      </p>
+
+                    </button>
+
+                  );
+
+                })}
 
               </div>
 
-            </section>
+              {/* Right */}
 
-            {/* Roles */}
+              <FadeIn key={selectedJob.id}>
 
-            <section className="mt-24 space-y-10">
+                <div className="rounded-[36px] border border-[color:var(--border)] p-12">
 
-              {roles.map((role) => (
-
-                <article
-                  key={role.company}
-                  className="rounded-[36px] border border-[color:var(--border)] p-10 transition-all duration-300 hover:-translate-y-1 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
-                >
-
-                  <span className="inline-flex rounded-full bg-[color:var(--accent)]/10 px-4 py-2 text-sm font-medium text-[color:var(--accent)]">
-                    {role.industry}
-                  </span>
-
-                  <p className="mt-8 text-sm uppercase tracking-[0.2em] text-[color:var(--muted)]">
-                    {role.dates}
-                  </p>
-
-                  <h2 className="mt-3 text-4xl font-semibold">
-                    {role.company}
+                  <h2 className="text-5xl font-semibold">
+                    {selectedJob.title}
                   </h2>
 
-                  <p className="mt-2 text-lg text-[color:var(--muted)]">
-                    {role.title}
+                  <p className="mt-4 text-lg text-[color:var(--muted)]">
+                    {selectedJob.title}
                   </p>
 
-                  <p className="mt-8 max-w-4xl text-lg leading-9 text-[color:var(--muted)]">
-                    {role.summary}
+                  <p className="mt-2 uppercase tracking-[0.2em] text-[color:var(--muted)]">
+                    {selectedJob.dates}
                   </p>
 
-                  <div className="mt-10">
+                  <div className="mt-16">
 
-                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-                      Highlights
+                    <h3 className="text-2xl font-semibold">Overview</h3>
+
+                    <p className="mt-6 text-lg leading-9 text-[color:var(--muted)]">
+                      {selectedJob.overview}
                     </p>
 
-                    <div className="mt-6 grid gap-5 md:grid-cols-2">
+                    <div className="mt-16">
 
-                      {role.highlights.map((item) => (
+                      <h3 className="text-2xl font-semibold">
+                        Key Contributions
+                      </h3>
 
-                        <div
-                          key={item}
-                          className="flex items-start gap-3"
+                      <ul className="mt-6 space-y-4 text-lg leading-8 text-[color:var(--muted)]">
+
+                        {selectedJob.contributions.map((item) => (
+
+                          <li key={item} className="flex gap-3">
+
+                            <span className="mt-2 h-2 w-2 rounded-full bg-[color:var(--accent)] shrink-0" />
+
+                            <span>{item}</span>
+
+                          </li>
+
+                        ))}
+
+                      </ul>
+
+                    </div>
+
+                    <div className="mt-16">
+
+                      <h3 className="text-2xl font-semibold">
+                        Why It Mattered
+                      </h3>
+
+                      <p className="mt-6 text-lg leading-9 text-[color:var(--muted)]">
+                        {selectedJob.impact}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                  <div className="mt-16">
+
+                    <h3 className="text-2xl font-semibold">
+                      Experience Gained
+                    </h3>
+
+                    <div className="mt-8 flex flex-wrap gap-3">
+
+                      {selectedJob.skills.map((skill) => (
+
+                        <span
+                          key={skill}
+                          className="rounded-full border border-[color:var(--border)] px-5 py-2 text-sm"
                         >
-                          <span className="mt-1 text-[color:var(--accent)]">
-                            ✓
-                          </span>
-
-                          <p className="leading-8 text-[color:var(--muted)]">
-                            {item}
-                          </p>
-
-                        </div>
+                          {skill}
+                        </span>
 
                       ))}
 
@@ -204,9 +286,9 @@ export default function ExperiencePage() {
 
                   </div>
 
-                </article>
+                </div>
 
-              ))}
+              </FadeIn>
 
             </section>
 

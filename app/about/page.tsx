@@ -1,4 +1,5 @@
 import Navigation from "../components/Navigation";
+import FadeIn from "../components/FadeIn";
 
 export default function AboutPage() {
   return (
@@ -9,145 +10,129 @@ export default function AboutPage() {
 
         <div className="flex-1">
 
-          <div className="mx-auto max-w-5xl px-20 py-24 xl:px-32">
+          <div className="mx-auto max-w-7xl px-20 py-24 xl:px-32">
 
             {/* Hero */}
 
-            <section className="max-w-4xl">
+            <FadeIn>
 
-              <h1 className="text-6xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
-                I never planned to become a project manager.
-              </h1>
+              <section>
 
-              <p className="mt-12 text-2xl leading-10 text-[color:var(--muted)]">
-                Looking back, the signs were always there.
-              </p>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                  About
+                </p>
 
-            </section>
+                <h1 className="mt-6 text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
+                  Hey, I'm Tanza.
+                </h1>
 
-            {/* Story */}
+                <p className="mt-12 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+                  I manage projects and build things that make work easier for people.
+                  If a system or process feels more complicated than it needs to be,
+                  I'm usually the person digging into it to figure out why, asking the
+                  right questions, and finding a cleaner way forward.
+                </p>
 
-            <section className="mt-28 border-t border-[color:var(--border)] pt-20 space-y-10">
+                <p className="mt-8 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+                  Over the past few years, I've worked across corporate and nonprofit
+                  organizations, but my approach has stayed the same: give people clear
+                  expectations, the right tools, and the space to do their job. I'd much
+                  rather focus on results than hover over every step.
+                </p>
 
-              <p className="text-xl leading-10 text-[color:var(--muted)]">
-                My career has taken me through operations, customer service,
-                nonprofit work, and project coordination. The job titles
-                changed, but the work stayed surprisingly consistent.
-              </p>
+                <p className="mt-8 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+                  I'm comfortable moving between traditional project tools, GitHub
+                  repositories, and AI to take an idea from a conversation to something
+                  real.
+                </p>
 
-              <p className="text-xl leading-10 text-[color:var(--muted)]">
-                I kept finding myself organizing messy projects, improving
-                workflows, documenting processes, and helping people move work
-                forward when priorities shifted.
-              </p>
+              </section>
 
-              <p className="text-xl leading-10 text-[color:var(--muted)]">
-                Long before I knew there was a name for it, I was doing project
-                management.
-              </p>
-
-              <p className="text-xl leading-10 text-[color:var(--muted)]">
-                Today, I enjoy creating clarity where complexity exists. Whether
-                it's launching a side project, supporting a nonprofit, or
-                improving how a team works together, I'm most energized by
-                building systems that make work feel simpler.
-              </p>
-
-            </section>
+            </FadeIn>
 
             {/* How I Work */}
 
-            <section className="mt-32">
+            <FadeIn>
 
-              <h2 className="text-5xl font-semibold">
-                How I work
-              </h2>
+              <section className="mt-32 border-t border-[color:var(--border)] pt-24">
 
-              <div className="mt-16 grid gap-8 md:grid-cols-3">
+                <h2 className="text-5xl font-semibold tracking-tight">
+                  How I work.
+                </h2>
 
-                <div className="rounded-[32px] border border-[color:var(--border)] p-8">
+                <p className="mt-10 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+                  If something feels more complicated than it needs to be,
+                  I'm probably going to keep digging until I understand why.
+                </p>
 
-                  <div className="text-4xl">🧩</div>
+                <p className="mt-8 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+                  Sometimes that means asking questions. Sometimes it means
+                  taking a different approach. Other times it means building
+                  something better myself.
+                </p>
 
-                  <h3 className="mt-6 text-2xl font-semibold">
-                    Create clarity
-                  </h3>
+                <p className="mt-8 max-w-4xl text-xl leading-9">
+                  Most things just need someone willing to ask better questions.
+                </p>
 
-                  <p className="mt-5 leading-8 text-[color:var(--muted)]">
-                    I enjoy turning scattered information into organized,
-                    actionable plans that people can actually use.
-                  </p>
+              </section>
 
-                </div>
+            </FadeIn>
 
-                <div className="rounded-[32px] border border-[color:var(--border)] p-8">
+            {/* When Work Ends */}
 
-                  <div className="text-4xl">🔍</div>
+            <FadeIn>
 
-                  <h3 className="mt-6 text-2xl font-semibold">
-                    Stay curious
-                  </h3>
+              <section className="mt-32 border-t border-[color:var(--border)] pt-24">
 
-                  <p className="mt-5 leading-8 text-[color:var(--muted)]">
-                    Most of my favorite projects began with one simple question:
-                    "Can this be done better?"
-                  </p>
+                <h2 className="text-5xl font-semibold tracking-tight">
+                  When work ends...
+                </h2>
 
-                </div>
+                <p className="mt-10 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+                  I rarely go long without a project. You can usually find me:
+                </p>
 
-                <div className="rounded-[32px] border border-[color:var(--border)] p-8">
+                <ul className="mt-10 space-y-5 text-xl leading-9 text-[color:var(--muted)]">
 
-                  <div className="text-4xl">🤝</div>
+                  <li>
+                    • Designing products like{" "}
+                    <span className="font-medium text-[color:var(--foreground)]">
+                      AuraCare
+                    </span>{" "}
+                    and building detailed case studies.
+                  </li>
 
-                  <h3 className="mt-6 text-2xl font-semibold">
-                    Build for people
-                  </h3>
+                  <li>
+                    • Supporting{" "}
+                    <span className="font-medium text-[color:var(--foreground)]">
+                      Tech Teens
+                    </span>{" "}
+                    through grant strategy and partnerships.
+                  </li>
 
-                  <p className="mt-5 leading-8 text-[color:var(--muted)]">
-                    Great systems aren't successful because they're complicated.
-                    They're successful because people enjoy using them.
-                  </p>
+                  <li>
+                    • Writing on{" "}
+                    <span className="font-medium text-[color:var(--foreground)]">
+                      Substack
+                    </span>.
+                  </li>
 
-                </div>
+                  <li>
+                    • Finding another project that probably wasn't on my to-do list yesterday.
+                  </li>
 
-              </div>
+                </ul>
 
-            </section>
+                <p className="mt-12 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+                  Ultimately, I'm motivated by curiosity. If there's a simpler
+                  way to solve a problem or a new tool that can help me do it
+                  better, I'm probably already experimenting with it.
+                </p>
 
-            {/* Beyond Work */}
+              </section>
 
-            <section className="mt-32 border-t border-[color:var(--border)] pt-20">
-
-              <h2 className="text-5xl font-semibold">
-                Beyond the job title
-              </h2>
-
-              <p className="mt-10 text-xl leading-10 text-[color:var(--muted)]">
-                Outside of work you'll usually find me building side projects,
-                writing on Substack, researching nonprofit strategy, organizing
-                fictional worlds in The Sims, or learning something that
-                definitely wasn't on my schedule. Curiosity has always been the
-                common thread behind everything I do.
-              </p>
-
-            </section>
-
-            {/* Looking Ahead */}
-
-            <section className="mt-32 border-t border-[color:var(--border)] pt-20">
-
-              <h2 className="text-5xl font-semibold">
-                What's next?
-              </h2>
-
-              <p className="mt-10 text-xl leading-10 text-[color:var(--muted)]">
-                I'm looking for opportunities where I can help teams bring
-                structure to ambitious ideas, improve how work gets done, and
-                continue growing as a project manager while building products
-                and systems that make people's lives a little easier.
-              </p>
-
-            </section>
+            </FadeIn>
 
           </div>
 
