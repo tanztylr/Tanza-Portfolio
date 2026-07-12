@@ -18,7 +18,7 @@ export default function AuraCarePage() {
 
             <section>
 
-              <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                 Healthcare Product
               </p>
 
@@ -31,6 +31,22 @@ export default function AuraCarePage() {
                 information immediately available through calm, thoughtful,
                 human-centered design.
               </p>
+
+              <div className="mt-12 flex flex-wrap gap-3">
+
+                <span className="rounded-full bg-[color:var(--accent)]/10 px-4 py-2 text-sm font-medium text-[color:var(--accent)]">
+                  UX Design
+                </span>
+
+                <span className="rounded-full bg-[color:var(--accent)]/10 px-4 py-2 text-sm font-medium text-[color:var(--accent)]">
+                  Healthcare
+                </span>
+
+                <span className="rounded-full bg-[color:var(--accent)]/10 px-4 py-2 text-sm font-medium text-[color:var(--accent)]">
+                  Product Thinking
+                </span>
+
+              </div>
 
               <div className="mt-20 overflow-hidden rounded-[40px] shadow-2xl">
 
@@ -53,7 +69,7 @@ export default function AuraCarePage() {
 
               <div>
 
-                <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                   Overview
                 </p>
 
@@ -69,7 +85,7 @@ export default function AuraCarePage() {
                 </p>
 
                 <p className="text-xl leading-10 text-[color:var(--muted)]">
-                  AuraCare explores the opposite approach: remove friction,
+                  AuraCare explores the opposite approach. Remove friction,
                   reduce cognitive load, and make critical actions instantly
                   accessible.
                 </p>
@@ -82,7 +98,7 @@ export default function AuraCarePage() {
 
             <section className="mt-32">
 
-              <p className="mb-12 text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+              <p className="mb-12 text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                 Design Goals
               </p>
 
@@ -99,7 +115,7 @@ export default function AuraCarePage() {
                     key={goal}
                     className="rounded-[32px] border border-[color:var(--border)] p-8 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
                   >
-                    <p className="leading-8">
+                    <p className="text-lg leading-8">
                       {goal}
                     </p>
                   </div>
@@ -116,17 +132,17 @@ export default function AuraCarePage() {
 
               <div>
 
-                <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                   Research
                 </p>
 
               </div>
 
-              <div className="space-y-8">
+              <div>
 
                 <div className="rounded-[28px] border border-[color:var(--border)] p-8">
 
-                  <ul className="space-y-5 leading-8 text-[color:var(--muted)]">
+                  <ul className="space-y-6 text-lg leading-9 text-[color:var(--muted)]">
 
                     <li>• Reviewed existing seizure tracking applications.</li>
 
@@ -148,7 +164,7 @@ export default function AuraCarePage() {
 
             <section className="mt-32">
 
-              <p className="mb-12 text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+              <p className="mb-12 text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                 Key Features
               </p>
 
@@ -182,7 +198,7 @@ export default function AuraCarePage() {
                       {title}
                     </h3>
 
-                    <p className="mt-5 leading-8 text-[color:var(--muted)]">
+                    <p className="mt-5 text-lg leading-8 text-[color:var(--muted)]">
                       {body}
                     </p>
 
@@ -198,29 +214,31 @@ export default function AuraCarePage() {
 
             <section className="mt-32 border-t border-[color:var(--border)] pt-20">
 
-              <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                 Reflection
               </p>
 
               <h2 className="mt-8 max-w-4xl text-5xl font-semibold leading-tight">
                 Good design isn't about adding more.
+                <br />
                 It's about knowing what to leave out.
               </h2>
 
               <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
-                AuraCare reinforced one lesson above all else: thoughtful
+                AuraCare reinforced one lesson above all else. Thoughtful
                 products succeed when they reduce complexity instead of adding
                 it. Every design decision was made to help users stay calm,
                 confident, and focused when every second matters.
               </p>
 
             </section>
+
             <CaseStudyFooter
-  next={{
-    title: "Portfolio V2",
-    href: "/projects/portfolio-v2",
-  }}
-/>
+              next={{
+                title: "Portfolio V2",
+                href: "/projects/portfolio-v2",
+              }}
+            />
 
           </div>
 

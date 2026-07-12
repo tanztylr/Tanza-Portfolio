@@ -39,9 +39,14 @@ export default function BeyondPage() {
 
               <section className="mt-28 grid gap-10 lg:grid-cols-2">
 
-                <div className="rounded-[36px] border border-[color:var(--border)] p-12 transition-all duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5">
+                <a
+                  href="https://substack.com/@fineillsayit1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-[36px] border border-[color:var(--border)] p-12 transition-all duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                >
 
-                  <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                     Writing
                   </p>
 
@@ -50,16 +55,25 @@ export default function BeyondPage() {
                   </h2>
 
                   <p className="mt-8 leading-8 text-[color:var(--muted)]">
-                    Thoughts on project management, technology, career growth,
-                    systems thinking, and the conversations people usually keep
-                    to themselves.
+                    Honest conversations about project management, technology,
+                    career growth, and the ideas most people think about but
+                    rarely say out loud.
                   </p>
 
-                </div>
+                  <span className="mt-10 inline-flex rounded-full bg-[color:var(--foreground)] px-6 py-3 text-sm font-medium text-[color:var(--background)] transition group-hover:scale-105">
+                    Read on Substack →
+                  </span>
 
-                <div className="rounded-[36px] border border-[color:var(--border)] p-12 transition-all duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5">
+                </a>
 
-                  <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                <a
+                  href="https://github.com/tanztylr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group rounded-[36px] border border-[color:var(--border)] p-12 transition-all duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                >
+
+                  <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                     Building
                   </p>
 
@@ -68,70 +82,16 @@ export default function BeyondPage() {
                   </h2>
 
                   <p className="mt-8 leading-8 text-[color:var(--muted)]">
-                    From AuraCare to The Sim File, I enjoy building products,
-                    systems, and experiences simply because I believe there is
-                    almost always a better solution.
+                    Explore the code behind my portfolio, experiments, and
+                    technical projects. It's where I document what I'm learning
+                    while building things that solve real problems.
                   </p>
 
-                </div>
+                  <span className="mt-10 inline-flex rounded-full bg-[color:var(--foreground)] px-6 py-3 text-sm font-medium text-[color:var(--background)] transition group-hover:scale-105">
+                    View GitHub →
+                  </span>
 
-              </section>
-
-            </FadeIn>
-
-            {/* Currently Exploring */}
-
-            <FadeIn>
-
-              <section className="mt-32 border-t border-[color:var(--border)] pt-24">
-
-                <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
-                  Currently Exploring
-                </p>
-
-                <div className="mt-10 grid gap-8 md:grid-cols-2">
-
-                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
-                    <h3 className="text-2xl font-semibold">
-                      Product Thinking
-                    </h3>
-
-                    <p className="mt-4 leading-8 text-[color:var(--muted)]">
-                      Learning how thoughtful products solve meaningful problems.
-                    </p>
-                  </div>
-
-                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
-                    <h3 className="text-2xl font-semibold">
-                      Front-End Development
-                    </h3>
-
-                    <p className="mt-4 leading-8 text-[color:var(--muted)]">
-                      Building interfaces that communicate ideas clearly.
-                    </p>
-                  </div>
-
-                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
-                    <h3 className="text-2xl font-semibold">
-                      Community Impact
-                    </h3>
-
-                    <p className="mt-4 leading-8 text-[color:var(--muted)]">
-                      Using technology and nonprofit work to create opportunities.
-                    </p>
-                  </div>
-
-                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
-                    <h3 className="text-2xl font-semibold">
-                      Better Systems
-                    </h3>
-
-                    <p className="mt-4 leading-8 text-[color:var(--muted)]">
-                      Designing workflows that reduce friction and improve clarity.
-                    </p>
-                  </div>
-
-                </div>
+                </a>
 
               </section>
 
@@ -146,4 +106,3 @@ export default function BeyondPage() {
     </main>
   );
 }
-

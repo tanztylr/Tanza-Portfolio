@@ -39,15 +39,18 @@ export default function Sidebar() {
         <nav className="space-y-2">
 
           {links.map(([num, label, href]) => {
-            const active = pathname === href;
+            const active =
+  href === "/"
+    ? pathname === "/"
+    : pathname === href || pathname.startsWith(`${href}/`);
 
             return (
               <Link
                 key={href}
                 href={href}
-                className={`group flex items-center gap-4 py-3 text-sm uppercase tracking-[0.18em] transition-all ${
+                className={`group flex items-center gap-4 rounded-full py-3 pl-2 pr-3 text-sm uppercase tracking-[0.18em] transition-all ${
                   active
-                    ? "translate-x-2 text-[color:var(--foreground)]"
+                    ? "translate-x-2 bg-[color:var(--accent)]/8 text-[color:var(--foreground)]"
                     : "text-[color:var(--muted)] hover:translate-x-2 hover:text-[color:var(--foreground)]"
                 }`}
               >

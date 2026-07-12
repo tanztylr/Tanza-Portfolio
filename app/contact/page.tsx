@@ -12,96 +12,131 @@ export default function ContactPage() {
 
           <div className="mx-auto max-w-7xl px-20 py-24 xl:px-32">
 
+            {/* Hero */}
+
             <section>
 
-              <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
                 Contact
               </p>
 
-              <h1 className="mt-6 max-w-5xl text-6xl font-semibold leading-[1.05] md:text-7xl">
-                Let's build something people remember.
+              <h1 className="mt-6 max-w-6xl text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
+                Let's build
+                <br />
+                something meaningful.
               </h1>
 
               <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
-                Whether you're hiring, collaborating, or just want to talk
-                through an idea, I'd love to hear from you.
+                Whether you're hiring, looking for a collaborator, or simply
+                want to connect, I'd love to hear what you're working on.
               </p>
 
             </section>
 
-            <section className="mt-24 border-t border-[color:var(--border)] pt-16">
+            {/* Contact Cards */}
 
-              <div className="space-y-14">
+            <section className="mt-24 grid gap-8 lg:grid-cols-2">
 
-                <div>
+              <div className="rounded-[36px] border border-[color:var(--border)] p-10 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5">
 
-                  <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-                    Email
-                  </p>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                  Email
+                </p>
 
-                  <a
-                    href="mailto:tanztylr@gmail.com"
-                    className="mt-3 inline-block text-4xl font-semibold transition hover:opacity-70"
-                  >
-                    tanztylr@gmail.com
-                  </a>
+                <a
+                  href="mailto:tanztylr@gmail.com"
+                  className="mt-6 block text-3xl font-semibold transition hover:opacity-70"
+                >
+                  tanztylr@gmail.com
+                </a>
 
-                </div>
+                <p className="mt-8 leading-8 text-[color:var(--muted)]">
+                  The fastest way to reach me for opportunities,
+                  collaborations, or questions.
+                </p>
 
-                <div>
+              </div>
 
-                  <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-                    Resume
-                  </p>
+              <div className="rounded-[36px] border border-[color:var(--border)] p-10 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5">
 
-                  <a
-                    href="/Tanza_Taylor_Resume.pdf"
-                    className="mt-3 inline-flex rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--foreground)] hover:bg-[color:var(--foreground)] hover:text-[color:var(--background)]"
-                  >
-                    Download Resume →
-                  </a>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                  Resume
+                </p>
 
-                </div>
+                <p className="mt-6 text-3xl font-semibold">
+                  Download a copy
+                </p>
 
-                <div>
+                <p className="mt-8 leading-8 text-[color:var(--muted)]">
+                  Explore my professional experience, featured projects,
+certifications, and technical background.
+                </p>
 
-                  <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-                    Find Me
-                  </p>
-
-                  <div className="mt-4 flex flex-wrap gap-4">
-
-                    <a
-                      href="https://www.linkedin.com/in/tanzataylor/"
-                      className="rounded-full border border-[color:var(--border)] px-6 py-3 transition hover:border-[color:var(--foreground)]"
-                    >
-                      LinkedIn
-                    </a>
-
-                    <a
-                      href="https://github.com/tanztylr/"
-                      className="rounded-full border border-[color:var(--border)] px-6 py-3 transition hover:border-[color:var(--foreground)]"
-                    >
-                      GitHub
-                    </a>
-
-                  </div>
-
-                </div>
+                <a
+  href="/T.Taylor_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-10 inline-flex rounded-full bg-[color:var(--foreground)] px-6 py-3 text-sm font-medium text-[color:var(--background)] transition hover:scale-105"
+>
+  View Resume
+</a>
 
               </div>
 
             </section>
 
-            <section className="mt-32 border-t border-[color:var(--border)] pt-12">
+            {/* Connect */}
 
-              <p className="max-w-xl text-lg leading-8 text-[color:var(--muted)]">
-                Thanks for taking the time to explore my work. I appreciate the
-                visit and hope we have the opportunity to build something
-                meaningful together.
+            <section className="mt-24 border-t border-[color:var(--border)] pt-20">
+
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Connect
               </p>
 
-              <p className="mt-12 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+              <div className="mt-10 flex flex-wrap gap-5">
+
+                <a
+                  href="https://www.linkedin.com/in/tanzataylor/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                >
+                  LinkedIn
+                </a>
+
+                <a
+                  href="https://github.com/tanztylr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                >
+                  GitHub
+                </a>
+
+                <a
+                  href="https://substack.com/@fineillsayit1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                >
+                  Substack
+                </a>
+
+              </div>
+
+            </section>
+
+            {/* Closing */}
+
+            <section className="mt-24 border-t border-[color:var(--border)] pt-20">
+
+              <p className="max-w-2xl text-xl leading-9 text-[color:var(--muted)]">
+                Thanks for taking the time to explore my work. I hope this
+                portfolio gave you a clear picture of how I think, how I work,
+                and the kinds of problems I enjoy solving.
+              </p>
+
+              <p className="mt-12 text-sm uppercase tracking-[0.3em] text-[color:var(--muted)]">
                 © 2026 Tanza Taylor
               </p>
 
