@@ -45,7 +45,7 @@ export default function ExperiencePage() {
       ],
     },
     {
-      industry: "Education",
+      industry: "Operations",
       company: "1000 Degrees",
       title: "Operations Manager",
       dates: "March 2019 — March 2021",

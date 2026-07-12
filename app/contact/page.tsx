@@ -1,5 +1,6 @@
-import Navigation from "../components/Navigation";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiSubstack } from "react-icons/si";
+import Navigation from "@/app/components/Navigation";
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
@@ -37,6 +38,8 @@ export default function ContactPage() {
 
             <section className="mt-24 grid gap-8 lg:grid-cols-2">
 
+              {/* Email */}
+
               <div className="rounded-[36px] border border-[color:var(--border)] p-10 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5">
 
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
@@ -57,6 +60,8 @@ export default function ContactPage() {
 
               </div>
 
+              {/* Resume */}
+
               <div className="rounded-[36px] border border-[color:var(--border)] p-10 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5">
 
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
@@ -64,22 +69,22 @@ export default function ContactPage() {
                 </p>
 
                 <p className="mt-6 text-3xl font-semibold">
-                  Download a copy
+                  View my resume
                 </p>
 
                 <p className="mt-8 leading-8 text-[color:var(--muted)]">
                   Explore my professional experience, featured projects,
-certifications, and technical background.
+                  certifications, and technical background.
                 </p>
 
                 <a
-  href="/T.Taylor_Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-10 inline-flex rounded-full bg-[color:var(--foreground)] px-6 py-3 text-sm font-medium text-[color:var(--background)] transition hover:scale-105"
->
-  View Resume
-</a>
+                  href="/T.Taylor_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-10 inline-flex rounded-full bg-[color:var(--foreground)] px-6 py-3 text-sm font-medium text-[color:var(--background)] transition hover:scale-105"
+                >
+                  View Resume
+                </a>
 
               </div>
 
@@ -99,8 +104,9 @@ certifications, and technical background.
                   href="https://www.linkedin.com/in/tanzataylor/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                  className="inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
                 >
+                  <FaLinkedin size={18} />
                   LinkedIn
                 </a>
 
@@ -108,8 +114,9 @@ certifications, and technical background.
                   href="https://github.com/tanztylr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                  className="inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
                 >
+                  <FaGithub size={18} />
                   GitHub
                 </a>
 
@@ -117,8 +124,9 @@ certifications, and technical background.
                   href="https://substack.com/@fineillsayit1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                  className="inline-flex items-center gap-2 rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
                 >
+                  <SiSubstack size={18} />
                   Substack
                 </a>
 
