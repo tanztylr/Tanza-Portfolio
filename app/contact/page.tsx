@@ -24,7 +24,7 @@ export default function ContactPage() {
               <h1 className="mt-6 max-w-6xl text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
                 Let's build
                 <br />
-                something meaningful.
+                something meaningful
               </h1>
 
               <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">

@@ -144,7 +144,7 @@ export default function ExperiencePage() {
                 </p>
 
                 <h1 className="mt-6 text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
-                  Where I've Worked.
+                  Where I've Worked
                 </h1>
 
                 <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">

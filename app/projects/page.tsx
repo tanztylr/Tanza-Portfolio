@@ -28,7 +28,7 @@ export default function ProjectsPage() {
                 <br />
                 systems &
                 <br />
-                thoughtful solutions.
+                thoughtful solutions 
               </h1>
 
               <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">

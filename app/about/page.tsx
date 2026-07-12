@@ -23,7 +23,7 @@ export default function AboutPage() {
                 </p>
 
                 <h1 className="mt-6 text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
-                  Hey, I'm Tanza.
+                  Hey, I'm Tanza 👋🏾
                 </h1>
 
                 <p className="mt-12 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
@@ -57,7 +57,7 @@ export default function AboutPage() {
               <section className="mt-32 border-t border-[color:var(--border)] pt-24">
 
                 <h2 className="text-5xl font-semibold tracking-tight">
-                  How I work.
+                  How I work
                 </h2>
 
                 <p className="mt-10 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
