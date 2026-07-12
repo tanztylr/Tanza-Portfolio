@@ -1,110 +1,132 @@
-import Image from "next/image";
 import Navigation from "../../components/Navigation";
+import CaseStudyFooter from "../../components/CaseStudyFooter";
 
-export default function TheSimFilePage() {
+export default function PortfolioV2Page() {
   return (
-    <main className="min-h-screen bg-[color:var(--background)] text-white">
-      <Navigation />
+    <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
 
-      <div className="mx-auto max-w-7xl px-8 py-24">
-        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-white/50">
-          Product & Automation
-        </p>
+      <div className="flex">
 
-        <h1 className="max-w-4xl text-5xl font-semibold leading-tight md:text-7xl">
-          The Sim File
-        </h1>
+        <Navigation />
 
-        <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/70">
-          The Sim File is a creative product concept that combines
-          structured prompts, automation, and system design to generate
-          believable Sims 4 households. Rather than relying on random
-          generators, the project focuses on creating characters with
-          intentional relationships, personalities, motivations, and
-          long-term storytelling potential.
-        </p>
+        <div className="flex-1">
 
-        <Image
-          src="/images/sim-file-home.png"
-          alt="The Sim File Homescreen"
-          width={1724}
-          height={940}
-          className="mt-20 w-full rounded-3xl border border-white/10"
-          priority
-        />
+          <div className="mx-auto max-w-7xl px-20 py-24 xl:px-32">
 
-        {/* The Challenge */}
+            {/* Hero */}
 
-        <section className="mt-24 grid gap-20 lg:grid-cols-[1fr_2fr]">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              The Challenge
-            </p>
+            <section>
+
+              <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Personal Brand
+              </p>
+
+              <h1 className="mt-6 max-w-5xl text-7xl font-semibold leading-[0.92] tracking-tight md:text-8xl">
+                Portfolio V2
+              </h1>
+
+              <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
+                More than a portfolio—this project became an exercise in
+                product thinking, storytelling, and intentional design.
+              </p>
+
+            </section>
+
+            {/* Overview */}
+
+            <section className="mt-32 grid gap-20 border-t border-[color:var(--border)] pt-20 lg:grid-cols-[260px_1fr]">
+
+              <div>
+
+                <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                  Challenge
+                </p>
+
+              </div>
+
+              <div className="space-y-8">
+
+                <p className="text-xl leading-10 text-[color:var(--muted)]">
+                  Traditional portfolios often become long lists of jobs,
+                  skills, and certifications. They explain what someone has
+                  done, but rarely communicate how they think.
+                </p>
+
+                <p className="text-xl leading-10 text-[color:var(--muted)]">
+                  This redesign focuses on clarity, storytelling, and helping
+                  recruiters understand my decision-making process—not just my
+                  experience.
+                </p>
+
+              </div>
+
+            </section>
+
+            {/* Principles */}
+
+            <section className="mt-32">
+
+              <p className="mb-12 text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Design Principles
+              </p>
+
+              <div className="grid gap-8 md:grid-cols-2">
+
+                {[
+                  "Human over corporate.",
+                  "Evidence over buzzwords.",
+                  "Calm, editorial-inspired layouts.",
+                  "Every section should answer a recruiter question."
+                ].map((item) => (
+
+                  <div
+                    key={item}
+                    className="rounded-[32px] border border-[color:var(--border)] p-8 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                  >
+                    <p className="leading-8">
+                      {item}
+                    </p>
+                  </div>
+
+                ))}
+
+              </div>
+
+            </section>
+
+            {/* Reflection */}
+
+            <section className="mt-32 border-t border-[color:var(--border)] pt-20">
+
+              <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Reflection
+              </p>
+
+              <h2 className="mt-8 max-w-4xl text-5xl font-semibold leading-tight">
+                Your portfolio should explain how you solve problems—not just
+                prove that you have.
+              </h2>
+
+              <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
+                Every decision in this redesign—from the typography to the
+                navigation—supports that philosophy. The result is a portfolio
+                that feels less like a résumé and more like a product.
+              </p>
+
+            </section>
+
           </div>
 
-          <div>
-            <p className="leading-8 text-white/70">
-              Creating compelling Sims 4 households often starts with a
-              blank screen. Existing generators typically randomize names,
-              traits, or aspirations, but rarely produce characters that
-              feel connected or believable. I wanted to design a system
-              that reduced creative friction while generating households
-              with built-in relationships, conflict, and storytelling
-              potential.
-            </p>
-          </div>
-        </section>
+        </div>
 
-        {/* My Process */}
-
-        {/* My Process */}
-
-<section className="mt-24 grid gap-20 lg:grid-cols-[1fr_2fr]">
-  <div>
-    <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-      My Process
-    </p>
-  </div>
-
-  <div>
-    <p className="leading-8 text-white/70">
-      Before building prompts, I identified the pieces that make fictional
-      households feel believable: relationships, aspirations, personalities,
-      careers, strengths, flaws, and story hooks. Instead of generating
-      everything randomly, I organized those elements into a structured
-      system that could consistently produce households with depth while
-      still leaving room for unexpected stories.
-    </p>
-
-    <Image
-      src="/images/TheSimFile Generation Screen.png"
-      alt="The Sim File Generation Screen"
-      width={1724}
-      height={940}
-      className="mt-12 w-full rounded-3xl border border-white/10"
-    />
-  </div>
-</section>
-
-        {/* Outcome */}
-
-        <section className="mt-24 grid gap-20 lg:grid-cols-[1fr_2fr]">
-          <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-              Outcome
-            </p>
-          </div>
-
-          <div>
-            <p className="leading-8 text-white/70">
-              The Sim File became more than a Sims generator—it became a
-              framework for structured creativity. The project reinforced
-              how thoughtful systems can reduce decision fatigue while
-              producing richer, more engaging experiences.
-            </p>
-          </div>
-        </section>
       </div>
+      <CaseStudyFooter
+  previous={{
+    title: "Portfolio V2",
+    href: "/projects/portfolio-v2",
+  }}
+/>
+
     </main>
   );
 }

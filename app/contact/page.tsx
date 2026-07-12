@@ -4,77 +4,110 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
 
-      <Navigation />
+      <div className="flex">
 
-      <div className="mx-auto max-w-7xl px-8 py-24">
+        <Navigation />
 
-        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-          Contact
-        </p>
+        <div className="flex-1">
 
-        <h1 className="max-w-5xl text-5xl font-semibold leading-tight md:text-7xl">
-          Let's build something people remember.
-        </h1>
+          <div className="mx-auto max-w-7xl px-20 py-24 xl:px-32">
 
-        <p className="mt-10 max-w-3xl text-xl leading-relaxed text-[color:var(--muted)]">
-          Whether you're looking for a project coordinator, operations
-          professional, or someone who enjoys bringing clarity to messy work,
-          I'd love to hear what you're building and how I can help.
-        </p>
+            <section>
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2">
+              <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                Contact
+              </p>
 
-          <div className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8 transition hover:border-[color:var(--foreground)]">
+              <h1 className="mt-6 max-w-5xl text-6xl font-semibold leading-[1.05] md:text-7xl">
+                Let's build something people remember.
+              </h1>
 
-            <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-              Email
-            </p>
+              <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
+                Whether you're hiring, collaborating, or just want to talk
+                through an idea, I'd love to hear from you.
+              </p>
 
-            <p className="mt-4 text-2xl font-semibold">
-              tanztylr@gmail.com
-            </p>
+            </section>
 
-            <p className="mt-6 leading-8 text-[color:var(--muted)]">
-              The best way to reach me for opportunities,
-              collaborations, or questions.
-            </p>
+            <section className="mt-24 border-t border-[color:var(--border)] pt-16">
+
+              <div className="space-y-14">
+
+                <div>
+
+                  <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                    Email
+                  </p>
+
+                  <a
+                    href="mailto:tanztylr@gmail.com"
+                    className="mt-3 inline-block text-4xl font-semibold transition hover:opacity-70"
+                  >
+                    tanztylr@gmail.com
+                  </a>
+
+                </div>
+
+                <div>
+
+                  <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                    Resume
+                  </p>
+
+                  <a
+                    href="/Tanza_Taylor_Resume.pdf"
+                    className="mt-3 inline-flex rounded-full border border-[color:var(--border)] px-7 py-3 transition hover:border-[color:var(--foreground)] hover:bg-[color:var(--foreground)] hover:text-[color:var(--background)]"
+                  >
+                    Download Resume →
+                  </a>
+
+                </div>
+
+                <div>
+
+                  <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                    Find Me
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap gap-4">
+
+                    <a
+                      href="https://www.linkedin.com/in/tanzataylor/"
+                      className="rounded-full border border-[color:var(--border)] px-6 py-3 transition hover:border-[color:var(--foreground)]"
+                    >
+                      LinkedIn
+                    </a>
+
+                    <a
+                      href="https://github.com/tanztylr/"
+                      className="rounded-full border border-[color:var(--border)] px-6 py-3 transition hover:border-[color:var(--foreground)]"
+                    >
+                      GitHub
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </section>
+
+            <section className="mt-32 border-t border-[color:var(--border)] pt-12">
+
+              <p className="max-w-xl text-lg leading-8 text-[color:var(--muted)]">
+                Thanks for taking the time to explore my work. I appreciate the
+                visit and hope we have the opportunity to build something
+                meaningful together.
+              </p>
+
+              <p className="mt-12 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                © 2026 Tanza Taylor
+              </p>
+
+            </section>
 
           </div>
-
-          <div className="rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8 transition hover:border-[color:var(--foreground)]">
-
-            <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-              Resume
-            </p>
-
-            <p className="mt-4 text-2xl font-semibold">
-              Download a copy
-            </p>
-
-            <p className="mt-6 leading-8 text-[color:var(--muted)]">
-              View my experience, projects, certifications,
-              and professional background.
-            </p>
-
-          </div>
-
-        </div>
-
-        <div className="mt-16 flex gap-4">
-
-          <a
-            href="mailto:tanztylr@gmail.com"
-            className="rounded-full bg-[color:var(--foreground)] px-6 py-3 text-sm font-medium text-[color:var(--background)] transition-all hover:opacity-90"
-          >
-            Email Me
-          </a>
-
-          <a
-            href="/Tanza_Taylor_Resume.pdf"
-            className="rounded-full border border-[color:var(--border)] px-6 py-3 text-sm font-medium transition-all hover:border-[color:var(--foreground)] hover:bg-[color:var(--foreground)] hover:text-[color:var(--background)]"
-          >
-            Download Resume
-          </a>
 
         </div>
 

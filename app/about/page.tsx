@@ -1,65 +1,149 @@
-import React from "react";
 import Navigation from "../components/Navigation";
 
-export default function AboutPage(): React.JSX.Element {
+export default function BeyondPage() {
   return (
     <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
 
-      <Navigation />
+      <div className="flex">
 
-      <section className="mx-auto max-w-6xl px-8 py-24">
+        <Navigation />
 
-        <h1 className="max-w-5xl text-6xl font-semibold leading-[1.05] md:text-7xl">
-          I build structure where there wasn't any before.
-        </h1>
+        <div className="flex-1">
 
-        <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
-          My career has never followed one straight path—and that's become one
-          of my biggest strengths. Across every role, I've naturally gravitated
-          toward simplifying complexity and helping people work better.
-        </p>
+          <div className="mx-auto max-w-7xl px-20 py-24 xl:px-32">
 
-      </section>
+            {/* Hero */}
 
-      <section className="mx-auto grid max-w-7xl gap-24 px-8 py-10 lg:grid-cols-[1fr_2fr]">
+            <section>
 
-        <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Beyond
+              </p>
 
-          <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-            Philosophy
-          </p>
+              <h1 className="mt-6 max-w-5xl text-6xl font-semibold leading-[1.02] md:text-8xl">
+                The work that
+                <br />
+                doesn't fit on
+                <br />
+                a résumé.
+              </h1>
+
+              <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
+                Some of my favorite ideas begin long before they become
+                projects. This is where curiosity, experimentation, and
+                continuous learning come together.
+              </p>
+
+            </section>
+
+            {/* Writing */}
+
+            <section className="mt-40 border-t border-[color:var(--border)] pt-20">
+
+              <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Writing
+              </p>
+
+              <h2 className="mt-8 text-5xl font-semibold">
+                Fine, I'll Say It
+              </h2>
+
+              <p className="mt-8 max-w-3xl text-lg leading-9 text-[color:var(--muted)]">
+                A collection of thoughts on project management, technology,
+                systems, career growth, and the conversations most people think
+                about—but rarely say out loud.
+              </p>
+
+            </section>
+
+            {/* Exploring */}
+
+            <section className="mt-40">
+
+              <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Currently Exploring
+              </p>
+
+              <div className="mt-12 grid gap-8 lg:grid-cols-3">
+
+                <div className="rounded-[32px] border border-[color:var(--border)] p-10 transition hover:-translate-y-2 hover:shadow-xl">
+
+                  <p className="text-6xl font-light text-[color:var(--border)]">
+                    01
+                  </p>
+
+                  <h3 className="mt-8 text-3xl font-semibold">
+                    Product Thinking
+                  </h3>
+
+                  <p className="mt-6 leading-8 text-[color:var(--muted)]">
+                    Learning how thoughtful products solve real problems
+                    through intentional design.
+                  </p>
+
+                </div>
+
+                <div className="rounded-[32px] border border-[color:var(--border)] p-10 transition hover:-translate-y-2 hover:shadow-xl">
+
+                  <p className="text-6xl font-light text-[color:var(--border)]">
+                    02
+                  </p>
+
+                  <h3 className="mt-8 text-3xl font-semibold">
+                    Front-End Development
+                  </h3>
+
+                  <p className="mt-6 leading-8 text-[color:var(--muted)]">
+                    Building interfaces that communicate ideas as clearly as
+                    the systems behind them.
+                  </p>
+
+                </div>
+
+                <div className="rounded-[32px] border border-[color:var(--border)] p-10 transition hover:-translate-y-2 hover:shadow-xl">
+
+                  <p className="text-6xl font-light text-[color:var(--border)]">
+                    03
+                  </p>
+
+                  <h3 className="mt-8 text-3xl font-semibold">
+                    Community Impact
+                  </h3>
+
+                  <p className="mt-6 leading-8 text-[color:var(--muted)]">
+                    Exploring how technology and nonprofit work can create
+                    opportunities for underserved communities.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </section>
+
+            {/* Current Focus */}
+
+            <section className="mt-40 border-t border-[color:var(--border)] pt-20">
+
+              <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                Right Now
+              </p>
+
+              <blockquote className="mt-8 max-w-5xl text-5xl font-semibold leading-tight">
+                Building things that are
+                <br />
+                thoughtful enough to last
+                <br />
+                and simple enough to use.
+              </blockquote>
+
+            </section>
+
+          </div>
 
         </div>
 
-        <div>
-
-          <p className="leading-8 text-[color:var(--muted)]">
-            I enjoy stepping into projects that feel overwhelming and turning
-            them into something people can actually understand, use, and improve.
-            Whether that means organizing workflows, planning initiatives, or
-            designing products, I look for clarity first.
-          </p>
-
-          <p className="mt-8 leading-8 text-[color:var(--muted)]">
-            That mindset shows up everywhere—from AuraCare to nonprofit work to
-            personal projects built simply because a better solution should exist.
-          </p>
-
-        </div>
-
-      </section>
-
-      <section className="mx-auto max-w-5xl border-t border-[color:var(--border)] px-8 py-24">
-
-        <blockquote className="max-w-4xl text-4xl font-semibold leading-relaxed">
-          "Good systems make good work feel effortless."
-        </blockquote>
-
-        <p className="mt-8 max-w-2xl leading-8 text-[color:var(--muted)]">
-          That's the principle behind almost everything I build.
-        </p>
-
-      </section>
+      </div>
 
     </main>
   );

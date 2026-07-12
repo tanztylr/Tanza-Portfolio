@@ -4,180 +4,145 @@ export default function ExperiencePage() {
   return (
     <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
 
-      <Navigation />
+      <div className="flex">
 
-      <div className="mx-auto max-w-7xl px-8 py-24">
+        <Navigation />
 
-        <p className="mb-4 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-          Experience
-        </p>
+        <div className="flex-1">
 
-        <h1 className="max-w-5xl text-5xl font-semibold leading-tight md:text-7xl">
-          Experience shaped by solving messy problems.
-        </h1>
+          <div className="mx-auto max-w-7xl px-20 py-24 xl:px-32">
 
-        <p className="mt-10 max-w-3xl text-xl leading-relaxed text-[color:var(--muted)]">
-          Across operations, project coordination, and nonprofit leadership,
-          I've consistently focused on improving workflows, reducing friction,
-          and helping people work more effectively.
-        </p>
+            <section>
 
-        <section className="mt-28 space-y-20">
+              <p className="mb-4 text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                Experience
+              </p>
 
-          {/* Tech Teens */}
+              <h1 className="max-w-5xl text-5xl font-semibold leading-tight md:text-7xl">
+                Experience shaped by solving messy problems.
+              </h1>
 
-          <article className="border-l border-[color:var(--border)] pl-8">
+              <p className="mt-10 max-w-3xl text-xl leading-relaxed text-[color:var(--muted)]">
+                Across operations, project coordination, and nonprofit leadership,
+                I've consistently focused on improving workflows, reducing friction,
+                and helping people work more effectively.
+              </p>
 
-            <p className="text-sm text-[color:var(--muted)]">
-              June 2026 — Present
-            </p>
+            </section>
 
-            <h2 className="mt-2 text-4xl font-semibold">
-              Tech Teens
-            </h2>
+            <section className="mt-28 space-y-20">
 
-            <p className="mt-3 text-[color:var(--muted)]">
-              Grant Research & Fundraising Support Manager
-            </p>
+              <article className="border-l border-[color:var(--border)] pl-8">
 
-            <ul className="mt-8 space-y-4 leading-8 text-[color:var(--muted)]">
+                <p className="text-sm text-[color:var(--muted)]">
+                  June 2026 — Present
+                </p>
 
-              <li>
-                • Research grant opportunities that align with workforce development,
-                technology education, and youth initiatives.
-              </li>
+                <h2 className="mt-2 text-4xl font-semibold">
+                  Tech Teens
+                </h2>
 
-              <li>
-                • Build relationships with businesses, schools, libraries,
-                and community organizations to expand program partnerships.
-              </li>
+                <p className="mt-3 text-[color:var(--muted)]">
+                  Grant Research & Fundraising Support Manager
+                </p>
 
-              <li>
-                • Track funding opportunities, application requirements,
-                and outreach efforts to improve organizational capacity.
-              </li>
+                <ul className="mt-8 space-y-4 leading-8 text-[color:var(--muted)]">
 
-              <li>
-                • Support initiatives that provide free technology education
-                to teens through community partnerships and fundraising.
-              </li>
+                  <li>• Research grant opportunities that align with workforce development, technology education, and youth initiatives.</li>
 
-            </ul>
+                  <li>• Build relationships with businesses, schools, libraries, and community organizations to expand program partnerships.</li>
 
-          </article>
+                  <li>• Track funding opportunities, application requirements, and outreach efforts to improve organizational capacity.</li>
 
-          {/* Cracker Barrel */}
+                  <li>• Support initiatives that provide free technology education to teens through community partnerships and fundraising.</li>
 
-          <article className="border-l border-[color:var(--border)] pl-8">
+                </ul>
 
-            <p className="text-sm text-[color:var(--muted)]">
-              September 2022 — February 2025
-            </p>
+              </article>
 
-            <h2 className="mt-2 text-4xl font-semibold">
-              Cracker Barrel
-            </h2>
+              <article className="border-l border-[color:var(--border)] pl-8">
 
-            <p className="mt-3 text-[color:var(--muted)]">
-              Project Coordinator
-            </p>
+                <p className="text-sm text-[color:var(--muted)]">
+                  September 2022 — February 2025
+                </p>
 
-            <ul className="mt-8 space-y-4 leading-8 text-[color:var(--muted)]">
+                <h2 className="mt-2 text-4xl font-semibold">
+                  Cracker Barrel
+                </h2>
 
-              <li>
-                • Coordinated operational initiatives across multiple teams
-                while balancing shifting priorities and deadlines.
-              </li>
+                <p className="mt-3 text-[color:var(--muted)]">
+                  Project Coordinator
+                </p>
 
-              <li>
-                • Identified workflow bottlenecks and implemented process
-                improvements that reduced recurring delays by 24%.
-              </li>
+                <ul className="mt-8 space-y-4 leading-8 text-[color:var(--muted)]">
 
-              <li>
-                • Improved communication between stakeholders to keep
-                projects moving efficiently.
-              </li>
+                  <li>• Coordinated operational initiatives across multiple teams while balancing shifting priorities and deadlines.</li>
 
-              <li>
-                • Built repeatable systems that increased consistency
-                across day-to-day operations.
-              </li>
+                  <li>• Identified workflow bottlenecks and implemented process improvements that reduced recurring delays by 24%.</li>
 
-            </ul>
+                  <li>• Improved communication between stakeholders to keep projects moving efficiently.</li>
 
-          </article>
+                  <li>• Built repeatable systems that increased consistency across day-to-day operations.</li>
 
-          {/* Assurant */}
+                </ul>
 
-          <article className="border-l border-[color:var(--border)] pl-8">
+              </article>
 
-            <p className="text-sm text-[color:var(--muted)]">
-              April 2021 — April 2022
-            </p>
+              <article className="border-l border-[color:var(--border)] pl-8">
 
-            <h2 className="mt-2 text-4xl font-semibold">
-              Assurant
-            </h2>
+                <p className="text-sm text-[color:var(--muted)]">
+                  April 2021 — April 2022
+                </p>
 
-            <p className="mt-3 text-[color:var(--muted)]">
-              Project Specialist
-            </p>
+                <h2 className="mt-2 text-4xl font-semibold">
+                  Assurant
+                </h2>
 
-            <ul className="mt-8 space-y-4 leading-8 text-[color:var(--muted)]">
+                <p className="mt-3 text-[color:var(--muted)]">
+                  Project Specialist
+                </p>
 
-              <li>
-                • Supported project execution and day-to-day operational
-                coordination across cross-functional teams.
-              </li>
+                <ul className="mt-8 space-y-4 leading-8 text-[color:var(--muted)]">
 
-              <li>
-                • Maintained documentation, tracked progress,
-                and helped ensure project deliverables stayed organized.
-              </li>
+                  <li>• Supported project execution and day-to-day operational coordination across cross-functional teams.</li>
 
-            </ul>
+                  <li>• Maintained documentation, tracked progress, and helped ensure project deliverables stayed organized.</li>
 
-          </article>
+                </ul>
 
-          {/* Earlier Experience */}
+              </article>
 
-          <article className="border-l border-[color:var(--border)] pl-8">
+              <article className="border-l border-[color:var(--border)] pl-8">
 
-            <p className="text-sm text-[color:var(--muted)]">
-              Earlier Experience
-            </p>
+                <p className="text-sm text-[color:var(--muted)]">
+                  Earlier Experience
+                </p>
 
-            <h2 className="mt-2 text-4xl font-semibold">
-              Operations Leadership
-            </h2>
+                <h2 className="mt-2 text-4xl font-semibold">
+                  Operations Leadership
+                </h2>
 
-            <p className="mt-3 text-[color:var(--muted)]">
-              1000 Degrees • Planet Fitness
-            </p>
+                <p className="mt-3 text-[color:var(--muted)]">
+                  1000 Degrees • Planet Fitness
+                </p>
 
-            <ul className="mt-8 space-y-4 leading-8 text-[color:var(--muted)]">
+                <ul className="mt-8 space-y-4 leading-8 text-[color:var(--muted)]">
 
-              <li>
-                • Led daily operations while supporting staff development
-                and customer experience initiatives.
-              </li>
+                  <li>• Led daily operations while supporting staff development and customer experience initiatives.</li>
 
-              <li>
-                • Created structure, improved processes,
-                and maintained high operational standards.
-              </li>
+                  <li>• Created structure, improved processes, and maintained high operational standards.</li>
 
-              <li>
-                • Strengthened leadership, communication,
-                and problem-solving skills across diverse environments.
-              </li>
+                  <li>• Strengthened leadership, communication, and problem-solving skills across diverse environments.</li>
 
-            </ul>
+                </ul>
 
-          </article>
+              </article>
 
-        </section>
+            </section>
+
+          </div>
+
+        </div>
 
       </div>
 

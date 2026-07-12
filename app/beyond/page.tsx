@@ -1,81 +1,149 @@
 import Navigation from "../components/Navigation";
+import FadeIn from "../components/FadeIn";
 
 export default function BeyondPage() {
   return (
     <main className="min-h-screen bg-[color:var(--background)] text-[color:var(--foreground)]">
 
-      <Navigation />
+      <div className="flex">
 
-      <section className="mx-auto max-w-6xl px-8 py-24">
+        <Navigation />
 
-        <p className="text-6xl font-semibold leading-tight md:text-7xl">
-          Curiosity doesn't clock out at 5 PM.
-        </p>
+        <div className="flex-1">
 
-        <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
-          My best ideas rarely begin with work. They usually begin with
-          curiosity.
-        </p>
+          <div className="mx-auto max-w-7xl px-20 py-24 xl:px-32">
 
-      </section>
+            {/* Hero */}
 
-      <section className="mx-auto grid max-w-7xl gap-20 px-8 pb-28 lg:grid-cols-2">
+            <FadeIn>
 
-        <div>
+              <section>
 
-          <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-            Writing
-          </p>
+                <h1 className="max-w-6xl text-6xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
+                  Curiosity doesn't clock out at 5 PM.
+                </h1>
 
-          <h2 className="mt-5 text-4xl font-semibold">
-            Fine, I'll Say It
-          </h2>
+                <p className="mt-10 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+                  My best ideas rarely begin with work. They usually begin with
+                  curiosity. This is where experiments, side projects, writing,
+                  and continuous learning come together.
+                </p>
 
-          <p className="mt-6 leading-8 text-[color:var(--muted)]">
-            Thoughts on project management, technology, career growth, and the
-            conversations people usually keep to themselves.
-          </p>
+              </section>
+
+            </FadeIn>
+
+            {/* Cards */}
+
+            <FadeIn>
+
+              <section className="mt-28 grid gap-10 lg:grid-cols-2">
+
+                <div className="rounded-[36px] border border-[color:var(--border)] p-12 transition-all duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5">
+
+                  <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                    Writing
+                  </p>
+
+                  <h2 className="mt-6 text-4xl font-semibold">
+                    Fine, I'll Say It
+                  </h2>
+
+                  <p className="mt-8 leading-8 text-[color:var(--muted)]">
+                    Thoughts on project management, technology, career growth,
+                    systems thinking, and the conversations people usually keep
+                    to themselves.
+                  </p>
+
+                </div>
+
+                <div className="rounded-[36px] border border-[color:var(--border)] p-12 transition-all duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5">
+
+                  <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                    Building
+                  </p>
+
+                  <h2 className="mt-6 text-4xl font-semibold">
+                    Personal Projects
+                  </h2>
+
+                  <p className="mt-8 leading-8 text-[color:var(--muted)]">
+                    From AuraCare to The Sim File, I enjoy building products,
+                    systems, and experiences simply because I believe there is
+                    almost always a better solution.
+                  </p>
+
+                </div>
+
+              </section>
+
+            </FadeIn>
+
+            {/* Currently Exploring */}
+
+            <FadeIn>
+
+              <section className="mt-32 border-t border-[color:var(--border)] pt-24">
+
+                <p className="text-sm uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                  Currently Exploring
+                </p>
+
+                <div className="mt-10 grid gap-8 md:grid-cols-2">
+
+                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
+                    <h3 className="text-2xl font-semibold">
+                      Product Thinking
+                    </h3>
+
+                    <p className="mt-4 leading-8 text-[color:var(--muted)]">
+                      Learning how thoughtful products solve meaningful problems.
+                    </p>
+                  </div>
+
+                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
+                    <h3 className="text-2xl font-semibold">
+                      Front-End Development
+                    </h3>
+
+                    <p className="mt-4 leading-8 text-[color:var(--muted)]">
+                      Building interfaces that communicate ideas clearly.
+                    </p>
+                  </div>
+
+                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
+                    <h3 className="text-2xl font-semibold">
+                      Community Impact
+                    </h3>
+
+                    <p className="mt-4 leading-8 text-[color:var(--muted)]">
+                      Using technology and nonprofit work to create opportunities.
+                    </p>
+                  </div>
+
+                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
+                    <h3 className="text-2xl font-semibold">
+                      Better Systems
+                    </h3>
+
+                    <p className="mt-4 leading-8 text-[color:var(--muted)]">
+                      Designing workflows that reduce friction and improve clarity.
+                    </p>
+                  </div>
+
+                </div>
+
+              </section>
+
+            </FadeIn>
+
+          </div>
 
         </div>
 
-        <div>
-
-          <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-            Building
-          </p>
-
-          <h2 className="mt-5 text-4xl font-semibold">
-            Personal Projects
-          </h2>
-
-          <p className="mt-6 leading-8 text-[color:var(--muted)]">
-            From AuraCare to The Sim File, I enjoy building things simply
-            because I believe a better solution should exist.
-          </p>
-
-        </div>
-
-      </section>
-
-      <section className="mx-auto max-w-5xl border-t border-[color:var(--border)] px-8 py-24">
-
-        <p className="text-sm uppercase tracking-[0.25em] text-[color:var(--muted)]">
-          Right Now
-        </p>
-
-        <h2 className="mt-5 text-4xl font-semibold">
-          Currently exploring...
-        </h2>
-
-        <ul className="mt-10 space-y-5 text-lg text-[color:var(--muted)]">
-          <li>• Product thinking</li>
-          <li>• Front-end development</li>
-          <li>• Grant strategy & nonprofit growth</li>
-          <li>• Building better systems</li>
-        </ul>
-
-      </section>
+      </div>
 
     </main>
   );
 }
+
