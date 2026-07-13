@@ -32,7 +32,7 @@ export default function AuraCarePage() {
                 human-centered design.
               </p>
 
-              <div className="mt-12 flex flex-wrap gap-3">
+                            <div className="mt-12 flex flex-wrap gap-3">
 
                 <span className="rounded-full bg-[color:var(--accent)]/10 px-4 py-2 text-sm font-medium text-[color:var(--accent)]">
                   UX Design
@@ -45,6 +45,46 @@ export default function AuraCarePage() {
                 <span className="rounded-full bg-[color:var(--accent)]/10 px-4 py-2 text-sm font-medium text-[color:var(--accent)]">
                   Product Thinking
                 </span>
+
+              </div>
+
+              <div className="mt-16 grid gap-8 border-t border-black/15 pt-10 md:grid-cols-4">
+
+                <div>
+                  <p className="text-xs uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                    Role
+                  </p>
+                  <p className="mt-3 text-lg font-medium">
+                    Product Designer & Project Manager
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-xs uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                    Timeline
+                  </p>
+                  <p className="mt-3 text-lg font-medium">
+                    2026
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-xs uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                    Tools
+                  </p>
+                  <p className="mt-3 text-lg font-medium">
+                    Next.js · React · GitHub · Vercel · AI
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-xs uppercase tracking-[0.25em] text-[color:var(--muted)]">
+                    Status
+                  </p>
+                  <p className="mt-3 text-lg font-medium">
+                    In Progress
+                  </p>
+                </div>
 
               </div>
 
@@ -65,7 +105,7 @@ export default function AuraCarePage() {
 
             {/* Overview */}
 
-            <section className="mt-32 grid gap-20 border-t border-[color:var(--border)] pt-20 lg:grid-cols-[260px_1fr]">
+            <section className="mt-32 grid gap-20 border-t border-black/15 pt-20 lg:grid-cols-[260px_1fr]">
 
               <div>
 
@@ -89,7 +129,9 @@ export default function AuraCarePage() {
                   reduce cognitive load, and make critical actions instantly
                   accessible.
                 </p>
-
+<p className="text-xl leading-10 text-[color:var(--muted)]">
+  Instead of asking what features the app could include, I focused on what users would actually need during the first few seconds of an emergency.
+</p>
               </div>
 
             </section>
@@ -99,7 +141,7 @@ export default function AuraCarePage() {
             <section className="mt-32">
 
               <p className="mb-12 text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-                Design Goals
+                Design Principles
               </p>
 
               <div className="grid gap-8 md:grid-cols-2">
@@ -113,7 +155,7 @@ export default function AuraCarePage() {
 
                   <div
                     key={goal}
-                    className="rounded-[32px] border border-[color:var(--border)] p-8 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                    className="rounded-[32px] border border-black/15 p-8 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
                   >
                     <p className="text-lg leading-8">
                       {goal}
@@ -128,7 +170,7 @@ export default function AuraCarePage() {
 
             {/* Research */}
 
-            <section className="mt-32 grid gap-20 border-t border-[color:var(--border)] pt-20 lg:grid-cols-[260px_1fr]">
+            <section className="mt-32 grid gap-20 border-t border-black/15 pt-20 lg:grid-cols-[260px_1fr]">
 
               <div>
 
@@ -140,17 +182,17 @@ export default function AuraCarePage() {
 
               <div>
 
-                <div className="rounded-[28px] border border-[color:var(--border)] p-8">
+                <div className="rounded-[28px] border border-black/15 p-8">
 
                   <ul className="space-y-6 text-lg leading-9 text-[color:var(--muted)]">
 
-                    <li>• Reviewed existing seizure tracking applications.</li>
+                    <li>• Most seizure apps prioritize long-term tracking over immediate emergency response.</li>
 
-                    <li>• Studied epilepsy first-aid recommendations.</li>
+                    <li>• During an emergency, users should never have to search for critical information.</li>
 
-                    <li>• Focused on minimizing decision-making during emergencies.</li>
+                    <li>• Reducing cognitive load became more important than adding additional features.</li>
 
-                    <li>• Prioritized immediate access to critical information.</li>
+                    <li>• Every screen was designed to support calm, confident decision-making under pressure.</li>
 
                   </ul>
 
@@ -191,7 +233,7 @@ export default function AuraCarePage() {
 
                   <div
                     key={title}
-                    className="rounded-[32px] border border-[color:var(--border)] p-8 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
+                    className="rounded-[32px] border border-black/15 p-8 transition duration-300 hover:-translate-y-2 hover:border-[color:var(--accent)] hover:bg-[color:var(--accent)]/5"
                   >
 
                     <h3 className="text-2xl font-semibold">
@@ -210,12 +252,12 @@ export default function AuraCarePage() {
 
             </section>
 
-            {/* Reflection */}
+                        {/* Reflection */}
 
-            <section className="mt-32 border-t border-[color:var(--border)] pt-20">
+            <section className="mt-32 border-t border-black/15 pt-20">
 
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-                Reflection
+                Reflections
               </p>
 
               <h2 className="mt-8 max-w-4xl text-5xl font-semibold leading-tight">
@@ -229,6 +271,14 @@ export default function AuraCarePage() {
                 products succeed when they reduce complexity instead of adding
                 it. Every design decision was made to help users stay calm,
                 confident, and focused when every second matters.
+              </p>
+
+              <p className="mt-8 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
+                Building AuraCare also reinforced how closely product
+                management and design work together. Every feature required
+                balancing user needs, technical feasibility, and simplicity
+                without losing sight of the core problem the product was
+                built to solve.
               </p>
 
             </section>
