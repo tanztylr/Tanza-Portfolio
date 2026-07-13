@@ -11,22 +11,22 @@ const jobs = [
     title: "Project Enablement Manager",
     dates: "June 2026 – Present",
     overview:
-  "As Project Enablement Manager, I helped strengthen Tech Teens' ability to deliver free technology education by researching grant opportunities, building community partnerships, and creating organized systems that supported the organization's long-term growth.",
+  "As Project Enablement Manager, I helped turn ideas into organized plans. My work focused on researching funding opportunities, building community partnerships, and creating systems that made it easier for Tech Teens to grow and deliver free technology programs for students.",
     contributions: [
-  "Researched grant opportunities that aligned with Tech Teens' mission and long-term goals.",
-  "Built and maintained a grant tracking system to organize deadlines, eligibility requirements, and application status.",
-  "Developed relationships with businesses, libraries, schools, and community organizations to expand partnership opportunities.",
-  "Prepared meeting documentation, funding recommendations, and strategic updates to support leadership decisions.",
-  "Created repeatable processes that made grant research and partnership outreach easier to manage over time.",
+  "Built and maintained the organization's grant tracker so funding opportunities, deadlines, and application progress stayed organized in one place.",
+  "Researched grant opportunities that aligned with Tech Teens' mission instead of chasing every available funding source.",
+  "Connected with schools, libraries, businesses, and community organizations to create new partnership opportunities.",
+  "Prepared meeting notes, funding recommendations, and planning documents that leadership could immediately use.",
+  "Created repeatable workflows that made grant research and partnership outreach easier to manage over time",
 ],
     impact:
   "My work helped create a stronger foundation for future fundraising and community engagement. By organizing grant research, documenting opportunities, and building partnership pipelines, I made it easier for leadership to make informed decisions and focus on expanding opportunities for the teens Tech Teens serves.",
     skills: [
-      "Project Coordination",
       "Grant Strategy",
-      "Stakeholder Management",
-      "Community Partnerships",
+      "Partnership Development",
+      "Operational Systems",
       "Documentation",
+      "Research",
     ],
   },
   {
@@ -35,20 +35,20 @@ const jobs = [
     title: "Project Coordinator",
     dates: "Sept 2022 – Feb 2025",
     overview:
-  "As a Project Coordinator, I supported operational initiatives by improving organization, coordinating work across teams, and helping projects move forward with fewer delays. My focus was on creating structure that made day-to-day work more efficient.",
-  contributions: [
-  "Coordinated projects across multiple departments to keep work organized and on schedule.",
-  "Identified recurring operational bottlenecks and recommended process improvements.",
-  "Maintained project documentation and communicated updates with stakeholders.",
-  "Supported scheduling and planning efforts to improve day-to-day operations.",
-  "Helped create more consistent processes that reduced delays and improved team efficiency.",
-],
+      "Improved scheduling workflows that reduced recurring operational delays by 24%.",
+    contributions: [
+      "Coordinated projects across multiple departments to keep work organized and on schedule.",
+      "Identified recurring operational bottlenecks and recommended process improvements.",
+      "Maintained project documentation and communicated updates with stakeholders.",
+      "Supported scheduling and planning efforts to improve day-to-day operations.",
+      "Helped create more consistent processes that reduced delays and improved team efficiency.",
+    ],
     impact:
   "By improving communication, documentation, and day-to-day coordination, I helped reduce recurring delays and created more consistent ways for teams to work together. Small operational improvements added up to smoother project execution.",
     skills: [
       "Operations",
-      "Scheduling",
-      "Process Improvement",
+      "Communication",
+      "Team Development",
       "Cross-functional Collaboration",
     ],
   },
@@ -143,7 +143,7 @@ export default function ExperiencePage() {
                   Experience
                 </p>
 
-                <h1 className="mt-6 text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
+                <h1 className="mt-6 text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl rounded-[36px] border border-[color:var(--border)] shadow-sm p-12">
                   Where I've Worked
                 </h1>
 
@@ -172,10 +172,10 @@ export default function ExperiencePage() {
                     <button
                       key={job.id}
                       onClick={() => setSelectedJob(job)}
-                      className={`w-full rounded-3xl border p-6 text-left transition duration-300 ${
-                        active
-                          ? "border-[color:var(--accent)] bg-[color:var(--accent)]/10"
-                          : "border-[color:var(--border)] hover:border-[color:var(--accent)]"
+                      className={`w-full cursor-pointer rounded-3xl border p-6 text-left transition-all duration-300 ease-out
+                       active
+  ? "border-[color:var(--accent)] bg-[color:var(--accent)]/10 scale-[1.02] shadow-lg ring-1 ring-[color:var(--accent)]"
+  : "border-[color:var(--border)] hover:border-[color:var(--accent)] hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl"
                       }`}
                     >
 
@@ -201,94 +201,80 @@ export default function ExperiencePage() {
 
               {/* Right */}
 
-              <FadeIn key={selectedJob.id}>
+<FadeIn key={selectedJob.id}>
 
-                <div className="rounded-[36px] border border-[color:var(--border)] p-12">
+  <div className="rounded-[36px] border border-[color:var(--border)] shadow-sm p-12">
 
-                  <h2 className="text-5xl font-semibold">
-                    {selectedJob.title}
-                  </h2>
+    <h2 className="text-5xl font-semibold">
+      {selectedJob.title}
+    </h2>
 
-                  <p className="mt-4 text-lg text-[color:var(--muted)]">
-                    {selectedJob.title}
-                  </p>
+    <p className="mt-4 text-lg text-[color:var(--muted)]">
+      {selectedJob.company}
+    </p>
 
-                  <p className="mt-2 uppercase tracking-[0.2em] text-[color:var(--muted)]">
-                    {selectedJob.dates}
-                  </p>
+    <p className="mt-2 uppercase tracking-[0.2em] text-[color:var(--muted)]">
+      {selectedJob.dates}
+    </p>
 
-                  <div className="mt-16">
+    <div className="mt-16">
 
-                    <h3 className="text-2xl font-semibold">Overview</h3>
+      <h3 className="text-2xl font-semibold">Overview</h3>
 
-                    <p className="mt-6 text-lg leading-9 text-[color:var(--muted)]">
-                      {selectedJob.overview}
-                    </p>
+      <p className="mt-6 text-lg leading-9 text-[color:var(--muted)]">
+        {selectedJob.overview}
+      </p>
 
-                    <div className="mt-16">
+      <div className="mt-16">
 
-                      <h3 className="text-2xl font-semibold">
-                        Key Contributions
-                      </h3>
+        <h3 className="text-2xl font-semibold">
+          Highlights
+        </h3>
 
-                      <ul className="mt-6 space-y-4 text-lg leading-8 text-[color:var(--muted)]">
+        <ul className="mt-6 space-y-4 text-lg leading-8 text-[color:var(--muted)]">
 
-                        {selectedJob.contributions.map((item) => (
+          {selectedJob.contributions.map((item) => (
 
-                          <li key={item} className="flex gap-3">
+            <li key={item} className="flex gap-3">
 
-                            <span className="mt-2 h-2 w-2 rounded-full bg-[color:var(--accent)] shrink-0" />
+              <span className="mt-2 h-2 w-2 rounded-full bg-[color:var(--accent)] shrink-0" />
 
-                            <span>{item}</span>
+              <span>{item}</span>
 
-                          </li>
+            </li>
 
-                        ))}
+          ))}
 
-                      </ul>
+        </ul>
 
-                    </div>
+      </div>
 
-                    <div className="mt-16">
+    </div>
 
-                      <h3 className="text-2xl font-semibold">
-                        Why It Mattered
-                      </h3>
+    <div className="mt-12">
 
-                      <p className="mt-6 text-lg leading-9 text-[color:var(--muted)]">
-                        {selectedJob.impact}
-                      </p>
+      <h3 className="text-2xl font-semibold">
+        Skills
+      </h3>
 
-                    </div>
+      <div className="mt-8 flex flex-wrap gap-3">
 
-                  </div>
+        {selectedJob.skills.map((skill) => (
 
-                  <div className="mt-16">
+          <span
+            key={skill}
+            className="rounded-full border border-[color:var(--border)] px-5 py-2 text-sm"
+          >
+            {skill}
+          </span>
 
-                    <h3 className="text-2xl font-semibold">
-                      Experience Gained
-                    </h3>
+        ))}
 
-                    <div className="mt-8 flex flex-wrap gap-3">
+      </div>
 
-                      {selectedJob.skills.map((skill) => (
-
-                        <span
-                          key={skill}
-                          className="rounded-full border border-[color:var(--border)] px-5 py-2 text-sm"
-                        >
-                          {skill}
-                        </span>
-
-                      ))}
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </FadeIn>
+    </div>
+</div>
+</FadeIn>
 
             </section>
 

@@ -4,15 +4,6 @@ import Navigation from "../components/Navigation";
 import FadeIn from "../components/FadeIn";
 import { NotebookPen } from "lucide-react";
 
-const exploring = [
-  "Making work less complicated",
-  "Questions worth asking",
-  "Building better systems",
-  "Turning ideas into products",
-  "Finding smarter tools",
-  "Creating things people actually use",
-];
-
 const backpack = [
   "🎮 Nintendo Switch",
   "🖍️ Coloring Books",
@@ -159,34 +150,6 @@ export default function BeyondPage() {
                   View on Substack
 
                 </a>
-
-              </section>
-
-            </FadeIn>
-                        {/* Rabbit Holes */}
-
-            <FadeIn>
-
-              <section className="mt-32 border-t border-[color:var(--border)] pt-24">
-
-                <h2 className="text-5xl font-semibold tracking-tight">
-                  Rabbit Holes
-                </h2>
-
-                <div className="mt-10 space-y-5">
-
-                  {exploring.map((item) => (
-
-                    <div
-                      key={item}
-                      className="rounded-[24px] border border-[color:var(--border)] p-6"
-                    >
-                      {item}
-                    </div>
-
-                  ))}
-
-                </div>
 
               </section>
 

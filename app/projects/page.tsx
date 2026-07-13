@@ -26,15 +26,15 @@ export default function ProjectsPage() {
               <h1 className="mt-6 max-w-5xl text-6xl font-semibold leading-[1.02] md:text-8xl">
                 Products,
                 <br />
-                systems &
+                projects &
                 <br />
-                thoughtful solutions 
+                things I've built.
               </h1>
 
               <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
-                Every project starts with the same question:
+                very project begins with the same question:
                 <strong className="text-[color:var(--foreground)]">
-                  {" "}How can this be simpler?
+                  {" "}How can this be easier for the people using it?
                 </strong>
               </p>
 
@@ -72,9 +72,9 @@ export default function ProjectsPage() {
                   </h2>
 
                   <p className="mt-8 text-lg leading-9 text-[color:var(--muted)]">
-                    A healthcare concept focused on making emergency seizure
-                    information immediately available through calm,
-                    human-centered design.
+                    A healthcare product concept designed 
+                    to make critical seizure information instantly accessible 
+                    during emergencies through thoughtful, human-centered design.
                   </p>
 
                   <p className="mt-10 text-sm uppercase tracking-[0.25em] transition group-hover:translate-x-2">
@@ -107,8 +107,8 @@ export default function ProjectsPage() {
                   </h2>
 
                   <p className="mt-8 text-lg leading-9 text-[color:var(--muted)]">
-                    Designing a portfolio that showcases not just what I've
-                    done—but how I think, solve problems, and communicate.
+                    Rebuilt from scratch to reflect how I approach design, product thinking, and project management
+                    with every page intentionally crafted from concept to deployment.
                   </p>
 
                   <p className="mt-10 text-sm uppercase tracking-[0.25em] transition group-hover:translate-x-2">
