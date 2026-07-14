@@ -32,7 +32,7 @@ export default function ProjectsPage() {
               </h1>
 
               <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
-                very project begins with the same question:
+                Every project begins with the same question:
                 <strong className="text-[color:var(--foreground)]">
                   {" "}How can this be easier for the people using it?
                 </strong>
