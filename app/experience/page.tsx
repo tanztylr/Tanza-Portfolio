@@ -172,10 +172,10 @@ export default function ExperiencePage() {
                     <button
                       key={job.id}
                       onClick={() => setSelectedJob(job)}
-                      className={`w-full cursor-pointer rounded-3xl border p-6 text-left transition-all duration-300 ease-out
-                       active
-  ? "border-[color:var(--accent)] bg-[color:var(--accent)]/10 scale-[1.02] shadow-lg ring-1 ring-[color:var(--accent)]"
-  : "border-[color:var(--border)] hover:border-[color:var(--accent)] hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl"
+                      className={`w-full rounded-3xl border p-6 text-left transition duration-300 ${
+                        active
+                          ? "border-[color:var(--accent)] bg-[color:var(--accent)]/10"
+                          : "border-[color:var(--border)] hover:border-[color:var(--accent)]"
                       }`}
                     >
 
@@ -261,12 +261,12 @@ export default function ExperiencePage() {
 
         {selectedJob.skills.map((skill) => (
 
-          <span
-            key={skill}
-            className="rounded-full border border-[color:var(--border)] px-5 py-2 text-sm"
-          >
-            {skill}
-          </span>
+                        <span
+                          key={skill}
+                          className="rounded-full border border-[color:var(--border)] px-5 py-2 text-sm"
+                        >
+                          {skill}
+                        </span>
 
         ))}
 

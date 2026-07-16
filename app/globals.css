@@ -50,3 +50,18 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+/* Shared interactive animations */
+
+.interactive {
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+.interactive:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 14px 30px rgba(20, 20, 20, 0.08);
+}
