@@ -21,13 +21,8 @@ export default function ProjectsPage() {
                 </p>
 
                 <h1 className="mt-6 max-w-5xl text-6xl font-semibold leading-[1.02] md:text-8xl">
-                  Products,
-                  <br />
-                  systems &
-                  <br />
-                  thoughtful solutions
+                  Products & thoughtful solutions
                 </h1>
-
                 <p className="mt-14 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
                   Every project starts with the same question:
                   <strong className="text-[color:var(--foreground)]">

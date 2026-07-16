@@ -27,10 +27,12 @@ export default function AuraCarePage() {
               </h1>
 
               <p className="mt-10 max-w-3xl text-xl leading-9 text-[color:var(--muted)]">
-                A healthcare product concept focused on making emergency seizure
-                information immediately available through calm, thoughtful,
-                human-centered design.
-              </p>
+  AuraCare began with a simple question:
+  <span className="text-[color:var(--foreground)] font-medium">
+    {" "}What if emergency responders could understand someone's seizure history in seconds instead of minutes?
+  </span>{" "}
+  The result is a healthcare product concept designed to reduce friction, improve communication, and make critical medical information instantly accessible during emergencies.
+</p>
 
                             <div className="mt-12 flex flex-wrap gap-3">
 
@@ -103,7 +105,7 @@ export default function AuraCarePage() {
 
             </section>
 
-            {/* Overview */}
+            {/* The Challenge */}
 
             <section className="mt-32 grid gap-20 border-t border-black/15 pt-20 lg:grid-cols-[260px_1fr]">
 
@@ -118,20 +120,61 @@ export default function AuraCarePage() {
               <div className="space-y-8">
 
                 <p className="text-xl leading-10 text-[color:var(--muted)]">
-                  During a seizure, every second matters. Existing epilepsy
-                  applications often attempted to solve every problem at once,
-                  creating crowded interfaces that buried the information users
-                  actually needed during an emergency.
-                </p>
+  During a seizure, every second matters. Existing epilepsy
+  applications often attempted to solve every problem at once,
+  creating crowded interfaces that buried the information users
+  actually needed during an emergency.
+</p>
 
                 <p className="text-xl leading-10 text-[color:var(--muted)]">
-                  AuraCare explores the opposite approach. Remove friction,
-                  reduce cognitive load, and make critical actions instantly
-                  accessible.
-                </p>
-<p className="text-xl leading-10 text-[color:var(--muted)]">
-  Instead of asking what features the app could include, I focused on what users would actually need during the first few seconds of an emergency.
+  In a high-stress situation, complexity becomes a barrier.
+  Emergency contacts, medical history, medications, and first-aid
+  guidance should never require multiple taps or force someone to
+  search through menus while time is critical.
 </p>
+<p className="text-xl leading-10 text-[color:var(--muted)]">
+  AuraCare was designed around a single principle:
+  <span className="font-medium text-[color:var(--foreground)]">
+    {" "}the right information should be available instantly.
+  </span>{" "}
+  Instead of asking what features the app could include, I focused on
+  what people would actually need during the first few seconds of an
+  emergency.
+</p>
+              </div>
+
+            </section>
+
+                    {/* The Problem */}
+
+            <section className="mt-32 grid gap-20 border-t border-black/15 pt-20 lg:grid-cols-[260px_1fr]">
+
+              <div>
+
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+                  The Problem
+                </p>
+
+              </div>
+
+              <div>
+
+                <div className="rounded-[28px] border border-black/15 p-8">
+
+                  <ul className="space-y-6 text-lg leading-9 text-[color:var(--muted)]">
+
+                    <li>• Existing epilepsy applications often prioritize long-term tracking over immediate emergency response.</li>
+
+                    <li>• During a seizure, searching through menus creates unnecessary cognitive load.</li>
+
+                    <li>• Emergency information should never require multiple taps.</li>
+
+                    <li>• Every interface decision should reduce stress rather than introduce it.</li>
+
+                  </ul>
+
+                </div>
+
               </div>
 
             </section>
@@ -168,41 +211,7 @@ export default function AuraCarePage() {
 
             </section>
 
-            {/* Research */}
-
-            <section className="mt-32 grid gap-20 border-t border-black/15 pt-20 lg:grid-cols-[260px_1fr]">
-
-              <div>
-
-                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
-                  Research
-                </p>
-
-              </div>
-
-              <div>
-
-                <div className="rounded-[28px] border border-black/15 p-8">
-
-                  <ul className="space-y-6 text-lg leading-9 text-[color:var(--muted)]">
-
-                    <li>• Most seizure apps prioritize long-term tracking over immediate emergency response.</li>
-
-                    <li>• During an emergency, users should never have to search for critical information.</li>
-
-                    <li>• Reducing cognitive load became more important than adding additional features.</li>
-
-                    <li>• Every screen was designed to support calm, confident decision-making under pressure.</li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-
-            </section>
-
-            {/* Features */}
+            {/* Key Features */}
 
             <section className="mt-32">
 

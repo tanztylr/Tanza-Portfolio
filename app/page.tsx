@@ -270,11 +270,11 @@ export default function Home() {
                 <div className="mt-12 flex flex-wrap gap-5">
 
                   <a
-                    href="/contact"
-                    className="rounded-full bg-[color:var(--foreground)] px-8 py-4 text-sm font-medium text-[color:var(--background)] transition hover:scale-105"
-                  >
-                    Contact Me
-                  </a>
+  href="mailto:tanzaneya.taylor1@gmail.com?subject=Let's%20Connect"
+  className="rounded-full bg-[color:var(--foreground)] px-8 py-4 text-sm font-medium text-[color:var(--background)] transition hover:scale-105"
+>
+  Get In Touch
+</a>
 
                   <a
                     href="/T.Taylor_Resume.pdf"

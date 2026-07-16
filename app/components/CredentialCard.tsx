@@ -51,14 +51,25 @@ export default function CredentialCard({
         </p>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full border border-[color:var(--border)] px-3 py-1 text-sm"
-            >
-              {skill}
-            </span>
-          ))}
+          {skills.map((skill) => {
+  const color =
+    ["Agile", "Scrum"].includes(skill)
+      ? "bg-[#E5EFE6] text-[#3F5A46] border-[#AFC3B2]"
+      : ["Project Planning", "Risk Management"].includes(skill)
+      ? "bg-[#E7EEF4] text-[#41576B] border-[#B7C9D8]"
+      : ["Recruiting", "Interviewing", "Hiring", "Talent Strategy", "Candidate Experience"].includes(skill)
+      ? "bg-[#F5EEE3] text-[#7A5A2B] border-[#DEC8A4]"
+      : "bg-[color:var(--accent)]/12 text-[color:var(--accent)] border-[color:var(--accent)]/35";
+
+  return (
+    <span
+      key={skill}
+      className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm ${color}`}
+    >
+      {skill}
+    </span>
+  );
+})}
         </div>
       </div>
     </article>

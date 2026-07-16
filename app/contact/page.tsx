@@ -47,10 +47,10 @@ export default function ContactPage() {
                 </p>
 
                 <a
-                  href="mailto:tanztylr@gmail.com"
+                  href="mailto:tanzaneya.taylor1@gmail.com?subject=Let's%20Connect"
                   className="mt-6 block text-3xl font-semibold transition hover:opacity-70"
                 >
-                  tanztylr@gmail.com
+                  tanzaneya.taylor1@gmail.com
                 </a>
 
                 <p className="mt-8 leading-8 text-[color:var(--muted)]">
