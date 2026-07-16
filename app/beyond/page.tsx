@@ -57,54 +57,7 @@ export default function BeyondPage() {
 
               <section className="mt-32 border-t border-[color:var(--border)] pt-24">
 
-                <h2 className="text-5xl font-semibold tracking-tight">
-                  Building Outside of Work.
-                </h2>
-
-                <div className="mt-12 grid gap-8 md:grid-cols-3">
-
-                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
-
-                    <h3 className="text-2xl font-semibold">
-                      AuraCare
-                    </h3>
-
-                    <p className="mt-6 leading-8 text-[color:var(--muted)]">
-                      Designing a tool that gives seizure survivors a few extra
-                      seconds when they matter most.
-                    </p>
-
-                  </div>
-
-                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
-
-                    <h3 className="text-2xl font-semibold">
-                      The Sim File
-                    </h3>
-
-                    <p className="mt-6 leading-8 text-[color:var(--muted)]">
-                      Building an entertainment universe because world-building
-                      is surprisingly fun.
-                    </p>
-
-                  </div>
-
-                  <div className="rounded-[28px] border border-[color:var(--border)] p-8">
-
-                    <h3 className="text-2xl font-semibold">
-                      This Portfolio
-                    </h3>
-
-                    <p className="mt-6 leading-8 text-[color:var(--muted)]">
-                      Treating my own portfolio like a product instead of a
-                      résumé.
-                    </p>
-
-                  </div>
-
-                </div>
-
-              </section>
+               </section>
 
             </FadeIn>
 

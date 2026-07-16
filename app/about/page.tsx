@@ -6,11 +6,11 @@ import PhotoStack from "../components/PhotoStack";
 export default function AboutPage() {
   const legoPhotos = [
   {
-    src: "/images/lego/adidas-event.jpg",
-    alt: "Tanza holding an Adidas LEGO build",
-    title: "LEGO Build Night",
-    caption: "Adidas Superstar Build • Atlanta, Georgia",
-  },
+  src: "/images/lego/lego-adidas-finished.jpg",
+  alt: "Tanza holding an Adidas LEGO build",
+  title: "LEGO Build Night",
+  caption: "Adidas Superstar Build • Atlanta, Georgia",
+},
   {
     src: "/images/lego/adidas-build.jpg",
     alt: "Building the Adidas shoe",

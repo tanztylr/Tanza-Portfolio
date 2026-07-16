@@ -21,14 +21,11 @@ export default function PhotoStack({ photos }: PhotoStackProps) {
     <div>
       {/* Main Image */}
       <div className="overflow-hidden rounded-3xl border border-[color:var(--border)]">
-        <Image
-          src={photos[activePhoto].src}
-          alt={photos[activePhoto].alt}
-          width={900}
-          height={700}
-          className="h-auto w-full object-cover transition duration-500 hover:scale-[1.02]"
-          priority
-        />
+        <img
+  src={photos[activePhoto].src}
+  alt={photos[activePhoto].alt}
+  className="h-auto w-full rounded-3xl object-cover"
+/>
       </div>
 
       {/* Caption */}
@@ -55,6 +52,7 @@ export default function PhotoStack({ photos }: PhotoStackProps) {
             }`}
           >
             <Image
+  unoptimized
               src={photo.src}
               alt={photo.alt}
               width={90}
