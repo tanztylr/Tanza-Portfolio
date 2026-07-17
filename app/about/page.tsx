@@ -1,4 +1,3 @@
-import CredentialCard from "../components/CredentialCard";
 import Navigation from "../components/Navigation";
 import FadeIn from "../components/FadeIn";
 import PhotoStack from "../components/PhotoStack";
@@ -88,60 +87,7 @@ export default function AboutPage() {
 
 </FadeIn>
 
-            {/* Credentials */}
-
-            <FadeIn>
-
-              <section className="mt-32 border-t border-[color:var(--border)] pt-24">
-
-                <h2 className="text-5xl font-semibold tracking-tight">
-                  Credentials
-                </h2>
-
-                <p className="mt-10 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
-                  I'm always learning something. These certifications represent the skills I've intentionally invested time building. 
-                  Click a badge to learn more.
-                </p>
-
-                <div className="mt-16 grid gap-8 md:grid-cols-2">
-
-                  <CredentialCard
-                    title="Google Professional Project Management"
-                    issuer="Google"
-                    image="/images/credentials/google-project-management.png"
-                    imageAlt="Google Project Management Certificate"
-                    credentialUrl="https://www.credly.com/badges/29d1ec4d-a227-489d-a14c-884587793a47"
-                    description="Completed Google's Professional Project Management Certificate, building practical skills in Agile delivery, stakeholder communication, project planning, risk management, and project execution."
-                    skills={[
-                      "Agile",
-                      "Scrum",
-                      "Project Planning",
-                      "Risk Management",
-                      "Stakeholders",
-                    ]}
-                  />
-
-                  <CredentialCard
-                    title="Talent Acquisition"
-                    issuer="HRCI"
-                    image="/images/credentials/hrci-talent-acquisition.png"
-                    imageAlt="HRCI Talent Acquisition Certificate"
-                    credentialUrl="https://coursera.org/share/b595c8a361662d764078baab31545d46"
-                    description="Completed HRCI's Talent Acquisition credential focused on sourcing strategy, interviewing, candidate experience, and modern hiring practices."
-                    skills={[
-                      "Recruiting",
-                      "Interviewing",
-                      "Hiring",
-                      "Candidate Experience",
-                      "Talent Strategy",
-                    ]}
-                  />
-
-                </div>
-
-              </section>
-
-            </FadeIn>
+            
 
             {/* When Work Ends */}
 

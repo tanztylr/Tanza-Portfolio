@@ -1,3 +1,4 @@
+import FeaturedCredential from "../components/FeaturedCredential";
 export default function Experience() {
   const roles = [
     {

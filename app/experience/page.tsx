@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Navigation from "../components/Navigation";
 import FadeIn from "../components/FadeIn";
+import FeaturedCredential from "../components/FeaturedCredential";
 
 const jobs = [
   {
@@ -143,7 +144,7 @@ export default function ExperiencePage() {
                   Experience
                 </p>
 
-                <h1 className="mt-6 text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl rounded-[36px] border border-[color:var(--border)] shadow-sm p-12">
+                <h1 className="mt-6 text-7xl font-semibold leading-[0.95] tracking-tight md:text-8xl">
                   Where I've Worked
                 </h1>
 
@@ -259,16 +260,22 @@ export default function ExperiencePage() {
 
       <div className="mt-8 flex flex-wrap gap-3">
 
-        {selectedJob.skills.map((skill) => (
+        {selectedJob.skills.map((skill, index) => (
 
-                        <span
-                          key={skill}
-                          className="rounded-full border border-[color:var(--border)] px-5 py-2 text-sm"
-                        >
-                          {skill}
-                        </span>
+  <span
+    key={skill}
+    className={`rounded-full border px-5 py-2 text-sm transition-all duration-300 hover:-translate-y-1 hover:rotate-1 ${
+      index % 3 === 0
+        ? "border-green-200 bg-green-50"
+        : index % 3 === 1
+        ? "border-amber-200 bg-amber-50"
+        : "border-blue-200 bg-blue-50"
+    }`}
+  >
+    {skill}
+  </span>
 
-        ))}
+))}
 
       </div>
 
@@ -276,11 +283,67 @@ export default function ExperiencePage() {
 </div>
 </FadeIn>
 
-            </section>
+</section>
 
-          </div>
+{/* Professional Development */}
+
+<FadeIn>
+
+  <section className="mt-32 w-full border-t border-[color:var(--border)] pt-24">
+
+    <h2 className="text-5xl font-semibold tracking-tight">
+      Professional Development
+    </h2>
+
+    <p className="mt-10 max-w-4xl text-xl leading-9 text-[color:var(--muted)]">
+      The best project managers never stop learning. I intentionally invest in
+      certifications and coursework that strengthen how I lead projects,
+      improve operations, and support teams.
+    </p>
+
+    <div className="mt-16 space-y-8">
+
+      <FeaturedCredential
+        title="Google Professional Project Management"
+        issuer="Google"
+        image="/images/credentials/google-project-management.png"
+        imageAlt="Google Project Management Certificate"
+        credentialUrl="https://www.credly.com/badges/29d1ec4d-a227-489d-a14c-884587793a47"
+        description="Completed Google's Professional Project Management Certificate, developing practical skills in Agile delivery, stakeholder communication, project planning, risk management, and project execution."
+        skills={[
+          "Agile",
+          "Scrum",
+          "Project Planning",
+          "Risk Management",
+          "Stakeholder Management",
+        ]}
+      />
+
+      <FeaturedCredential
+        title="Talent Acquisition"
+        issuer="HRCI"
+        image="/images/credentials/hrci-talent-acquisition.png"
+        imageAlt="HRCI Talent Acquisition Certificate"
+        credentialUrl="https://coursera.org/share/b595c8a361662d764078baab31545d46"
+        description="Completed HRCI's Talent Acquisition credential focused on recruiting strategy, interviewing, candidate experience, and modern hiring practices."
+        skills={[
+          "Recruiting",
+          "Interviewing",
+          "Hiring",
+          "Candidate Experience",
+          "Talent Strategy",
+        ]}
+      />
+
+    </div>
+
+    </section>
+
+  </FadeIn>
 
         </div>
+
+      </div>
 
       </div>
 
