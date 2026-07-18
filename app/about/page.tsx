@@ -5,17 +5,17 @@ import PhotoStack from "../components/PhotoStack";
 export default function AboutPage() {
   const legoPhotos = [
   {
-  src: "/images/lego/lego-adidas-finished.jpg",
-  alt: "Tanza holding an Adidas LEGO build",
-  title: "LEGO Build Night",
-  caption: "Adidas Superstar Build • Atlanta, Georgia",
+    src: "/images/about/portfolio-headshot.jpg",
+  alt: "Portrait of Tanza Taylor",
+  title: "Just Me",
+  caption: "Somewhere between figuring it out and making it happen.",
 },
   {
-    src: "/images/lego/adidas-build.jpg",
-    alt: "Building the Adidas shoe",
-    title: "Work in Progress",
-    caption: "Half the fun is figuring it out.",
-  },
+    src: "/images/lego/lego-adidas-finished.jpg",
+    alt: "Tanza holding an Adidas LEGO build",
+    title: "LEGO Build Night",
+    caption: "Adidas Superstar Build • Atlanta, Georgia",
+},
   {
     src: "/images/lego/brickcon-food.jpg",
     alt: "BrickCon food display",

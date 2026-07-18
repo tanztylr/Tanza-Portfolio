@@ -31,15 +31,20 @@ export default function ProjectCarousel() {
 
           <div className="relative min-h-[650px]">
 
-            <Image
-              src="/images/auracare lite homescreen.png"
-              alt="AuraCare"
-              fill
-              sizes="(min-width:1024px) 60vw,100vw"
-              className="object-cover"
-            />
+  <Image
+    src="/images/auracare lite homescreen.png"
+    alt="AuraCare"
+    fill
+    sizes="(min-width:1024px) 60vw,100vw"
+    className="object-cover"
+  />
 
-          </div>
+  <div className="absolute left-6 top-6 z-10 flex items-center gap-2 rounded-full border border-white/40 bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] shadow-sm backdrop-blur-md">
+    <span className="h-2 w-2 rounded-full bg-green-500" />
+    Live
+  </div>
+
+</div>
 
           <div className="flex justify-center">
 

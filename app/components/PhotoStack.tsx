@@ -16,52 +16,45 @@ type PhotoStackProps = {
 
 export default function PhotoStack({ photos }: PhotoStackProps) {
   const [activePhoto, setActivePhoto] = useState(0);
+  const showPrevious = () => {
+  setActivePhoto((current) =>
+    current === 0 ? photos.length - 1 : current - 1
+  );
+};
+
+const showNext = () => {
+  setActivePhoto((current) =>
+    current === photos.length - 1 ? 0 : current + 1
+  );
+};
 
   return (
     <div>
       {/* Main Image */}
-      <div className="overflow-hidden rounded-3xl border border-[color:var(--border)]">
-        <img
+<div className="relative overflow-hidden rounded-3xl border border-[color:var(--border)]">
+  <img
+  key={photos[activePhoto].src}
   src={photos[activePhoto].src}
   alt={photos[activePhoto].alt}
-  className="h-auto w-full rounded-3xl object-cover"
+  className="h-auto w-full animate-[fadeIn_0.5s_ease-in-out] object-cover"
 />
-      </div>
 
-      {/* Caption */}
-      <div className="mt-5">
-        <h3 className="text-xl font-semibold">
-          {photos[activePhoto].title}
-        </h3>
+  <button
+    onClick={showPrevious}
+    aria-label="Previous photo"
+    className="absolute bottom-5 left-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-white/60 text-xl shadow-sm backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-white/85"
+  >
+    ←
+  </button>
 
-        <p className="mt-2 text-[color:var(--muted)]">
-          {photos[activePhoto].caption}
-        </p>
-      </div>
-
-      {/* Thumbnails */}
-      <div className="mt-6 flex gap-3">
-        {photos.map((photo, index) => (
-          <button
-            key={photo.src}
-            onClick={() => setActivePhoto(index)}
-            className={`overflow-hidden rounded-xl border transition-all ${
-              activePhoto === index
-                ? "border-[color:var(--accent)] ring-2 ring-[color:var(--accent)]"
-                : "border-[color:var(--border)] hover:border-[color:var(--accent)]"
-            }`}
-          >
-            <Image
-  unoptimized
-              src={photo.src}
-              alt={photo.alt}
-              width={90}
-              height={90}
-              className="h-20 w-20 object-cover"
-            />
-          </button>
-        ))}
-      </div>
+  <button
+    onClick={showNext}
+    aria-label="Next photo"
+    className="absolute bottom-5 right-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-white/60 text-xl shadow-sm backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-white/85"
+  >
+    →
+  </button>
+</div>
     </div>
   );
 }

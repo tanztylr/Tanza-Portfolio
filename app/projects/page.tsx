@@ -36,11 +36,8 @@ export default function ProjectsPage() {
             {/* AuraCare */}
             <FadeIn>
               <section className="mt-32">
-                <a
-                  href="/projects/auracare"
-                  className="group grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]"
-                >
-                  <div className="overflow-hidden rounded-[36px] border border-[color:var(--border)] bg-white shadow-xl transition-shadow duration-500 group-hover:shadow-2xl">
+                <a href="/projects/auracare" className="group grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]">
+                  <div className="relative overflow-hidden rounded-[36px] border border-[color:var(--border)] bg-white shadow-xl transition-shadow duration-500 group-hover:shadow-2xl">
                     <Image
                       src="/images/auracare lite homescreen.png"
                       alt="AuraCare"
@@ -48,6 +45,11 @@ export default function ProjectsPage() {
                       height={900}
                       className="transition duration-700 group-hover:scale-105"
                     />
+
+                    <div className="absolute left-5 top-5 z-10 flex items-center gap-2 rounded-full border border-white/40 bg-white/80 px-4 py-2 text-xs font-medium shadow-sm backdrop-blur-md">
+  <span className="h-2 w-2 rounded-full bg-green-500" />
+  Live
+</div>
                   </div>
 
                   <div>
@@ -109,12 +111,9 @@ export default function ProjectsPage() {
             {/* Sim File */}
 
             <FadeIn>
-  <section className="mt-40 pb-24">
-                <a
-                  href="/projects/the-sim-file"
-                  className="group grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]"
-                >
-                  <div className="overflow-hidden rounded-[36px] border border-[color:var(--border)] bg-white shadow-xl transition-shadow duration-500 group-hover:shadow-2xl">
+              <section className="mt-40 pb-24">
+                <div className="group grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]">
+                  <div className="relative overflow-hidden rounded-[36px] border border-[color:var(--border)] bg-white shadow-xl transition-shadow duration-500 group-hover:shadow-2xl">
                     <Image
                       src="/images/sim-file-home.png"
                       alt="The Sim File"
@@ -122,6 +121,10 @@ export default function ProjectsPage() {
                       height={900}
                       className="transition duration-700 group-hover:scale-105"
                     />
+                    <div className="absolute left-5 top-5 z-10 flex items-center gap-2 rounded-full border border-white/40 bg-white/80 px-4 py-2 text-xs font-medium shadow-sm backdrop-blur-md">
+  <span className="h-2 w-2 rounded-full bg-green-500" />
+  Live
+</div>
                   </div>
 
                   <div>
@@ -138,11 +141,25 @@ export default function ProjectsPage() {
                       documentation, storytelling, and creative workflows.
                     </p>
 
-                    <p className="mt-10 inline-block text-sm font-medium uppercase tracking-[0.25em] transition-transform duration-300 group-hover:translate-x-1">
-                      View Case Study →
-                    </p>
-                  </div>
-                </a>
+                    <div className="mt-10 flex flex-wrap items-center gap-8">
+                      <a
+                        href="/projects/the-sim-file"
+                        className="inline-block text-sm font-medium uppercase tracking-[0.25em] transition-transform duration-300 hover:translate-x-1"
+                      >
+                        View Case Study →
+                      </a>
+
+                      <a
+                        href="https://the-sim-file.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-sm font-medium uppercase tracking-[0.25em] text-[color:var(--accent)] transition-transform duration-300 hover:-translate-y-0.5"
+                      >
+                        Visit Live Site ↗
+                      </a>
+                    </div>
+                                    </div>
+                </div>
               </section>
             </FadeIn>
           </div>
