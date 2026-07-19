@@ -9,7 +9,7 @@ export default function Experience() {
         "Researching grant opportunities, building strategic partnerships, and helping expand access to technology education for underserved teens.",
     },
     {
-      years: "2022 — 2025",
+      years: "2024 — 2025",
       company: "Cracker Barrel",
       title: "Project Coordinator",
       summary:

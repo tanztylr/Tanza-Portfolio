@@ -9,8 +9,8 @@ const jobs = [
   {
     id: "techteens",
     company: "Tech Teens",
-    title: "Project Enablement Manager",
-    dates: "June 2026 – Present",
+    title: "Grant Research & Partnerships Coordinator",
+    dates: "May 2026 – Present",
     overview:
       "At Tech Teens, I work across grant research, fundraising strategy, partnerships, and internal planning. A lot of my role is figuring out what the organization needs, turning that into something actionable, and building the structure to keep it moving.",
     contributions: [

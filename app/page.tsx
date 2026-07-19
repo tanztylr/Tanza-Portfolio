@@ -164,7 +164,7 @@ export default function Home() {
                 {[
                   {
                     company: "Tech Teens",
-                    role: "Project Enablement Manager",
+                    role: "Grant Research & Partnerships Coordinator",
                     body:
                       "Helping a growing nonprofit improve grant strategy, partnerships, and project organization to expand access to technology education.",
                   },
