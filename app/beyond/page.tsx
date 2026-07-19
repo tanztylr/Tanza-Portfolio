@@ -2,25 +2,27 @@
 
 import Navigation from "../components/Navigation";
 import FadeIn from "../components/FadeIn";
+import SubstackCarousel from "../components/SubstackCarousel";
 
-const facts = [
+type Fact = {
+  label: string;
+  value: string;
+  link?: string;
+  linkText?: string;
+};
+
+const facts: Fact[] = [
   {
     label: "Based In",
     value: "Atlanta, Georgia",
   },
   {
     label: "Currently Learning",
-    value: "Project management, AI, and product design",
-  },
-  {
-    label: "Creative Outlet",
-    value: "Writing — usually when I have something I can't stop thinking about",
-    link: "https://substack.com/@fineillsayit1",
-    linkText: "Read on Substack",
+    value: "Project management and product design.",
   },
   {
     label: "Currently Into",
-    value: "LEGO builds, creative technology, and figuring out how things work",
+    value: "LEGO builds, creative technology, and figuring out how things work.",
   },
   {
     label: "Fun Fact",
@@ -107,6 +109,18 @@ export default function BeyondPage() {
                 </div>
               </section>
             </FadeIn>
+            <FadeIn>
+  <section className="mt-32">
+    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[color:var(--accent)]">
+      Creative Outlet
+    </p>
+
+    <h2 className="mt-6 text-4xl font-semibold leading-tight">
+      Writing — where I explore ideas that stick with me.
+    </h2>
+<SubstackCarousel />
+  </section>
+</FadeIn>
 
           </div>
         </div>
